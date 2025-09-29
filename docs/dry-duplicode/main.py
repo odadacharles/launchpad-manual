@@ -16,7 +16,7 @@ for path in rst_files:
 open("dry-files/duplifiles.txt", "w")
 
 while len(file_paths) > 1:
-    phrases = import_page(file_paths)  #Create phrases to be compared from two files
+    phrases = import_page(file_paths)  #Create phrases to be compared from two files ---> This should be moved to duplicheck.py so all the paths are available there
     duplichecker = duplicheck(phrases) 
     if duplichecker[0] == True:  #Compare two phrases
         print ('duplicode')
@@ -26,6 +26,7 @@ while len(file_paths) > 1:
             duplifiles.write(path1[1] + '       >>>>>>           ' + path2[1] + '     ' + duplichecker[2] + '\n')
 
     file_paths.pop(0)
+#As is, one file is only compared to the next one. We need one file to be compared to each and every file before we pop the 0th index
 
 # dfs = [pd.read_rst(file) for file in rst_files]
 # combined_data = pd.concat(dfs, ignore_index=True)

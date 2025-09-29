@@ -1,0 +1,9 @@
+Methods
+=======
+1. Create a list of available docs
+2. Identify the next two docs to be processed
+3. Import files, read the data, and convert it to comparable phrases
+4. Compare words in groups of 50 to the other doc wholesale
+    5. What to do when a duplicate is found
+    6. What to do when no duplicate is found
+7. Append duplicate file paths to duplicates list
