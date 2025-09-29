@@ -1,0 +1,25 @@
+/help.rst       >>>>>>           /contribute-to-our-docs.rst      .. _API documentation: http://people.canonical.co
+/developer/how-to/building-lpdev-images.rst       >>>>>>           /developer/how-to/running-quickstart.rst      `Codehosting <https://dev.launchpad.net/Code/HowT
+/developer/reference/services/build-farm.rst       >>>>>>           /developer/reference/services/buildbot.rst      <https://git.launchpad.net/launchpad-mojo-specs/t
+/developer/reference/services/fetch-service.rst       >>>>>>           /developer/reference/services/git-hosting.rst      Log files --------- See `FreshLogs documentation 
+/developer/reference/services/git-hosting.rst       >>>>>>           /developer/reference/services/signing.rst      <https://git.launchpad.net/launchpad-mojo-specs/t
+/dry-duplicode/dry-files/answer-tracker.rst       >>>>>>           /dry-duplicode/dry-files/asking-for-help.rst      **Launchpad Integration:** The Answer Tracker is 
+/user/how-to/packaging/build-rocks-in-launchpad.rst       >>>>>>           /user/how-to/packaging/build-snaps-in-launchpad.rst      builds across multiple architectures, without nee
+/user/how-to/account-management/create-account.rst       >>>>>>           /user/how-to/launchpad-api/index.rst     == .. include:: /includes/important_not_revised_he
+/user/how-to/launchpadlib/using-launchpadlib.rst       >>>>>>           /user/how-to/launchpadlib/python-api.rst      data. :: from launchpadlib.launchpad import Launc
+/user/how-to/work-with-code-hosted-on-launchpad/create-and-manage-a-merge-proposal.rst       >>>>>>           /user/how-to/work-with-code-hosted-on-launchpad/linking-code-to-bug-reports-and-blueprints.rst      branch <find-and-download-code-hosted-on-launchpa
+/user/how-to/work-with-code-hosted-on-launchpad/host-your-code-on-launchpad.rst       >>>>>>           /user/how-to/work-with-code-hosted-on-launchpad/git-hosting-on-launchpad.rst     ------------------------------- You can tell Launc
+/user/how-to/work-with-code-hosted-on-launchpad/create-and-maintain-personal-branch.rst       >>>>>>           /user/how-to/projects/index.rst     ======== .. include:: /includes/important_not_revi
+/user/how-to/projects/project-translations/exporting-translations.rst       >>>>>>           /user/how-to/projects/project-translations/import-translation-templates.rst     translations <how-to-import-project-translations>`
+/user/how-to/projects/project-translations/import-translation-templates.rst       >>>>>>           /user/how-to/projects/project-translations/import-project-translations.rst     include:: /includes/important_not_revised_help.rst
+/user/how-to/work-with-bazaar/using-launchpad-with-bazaar.rst       >>>>>>           /user/how-to/work-with-bazaar/create-and-publish-branches.rst      .. include:: /includes/important_not_revised_help
+/user/reference/packaging/ppas/ppa.rst       >>>>>>           /user/reference/packaging/ppas/building-a-source-package.rst      `changelog file <https://canonical-ubuntu-packagi
+/user/reference/bug-tracker-api/external-bug-trackers.rst       >>>>>>           /user/reference/bug-tracker-api/bug-statuses.rst     include:: /includes/important_not_revised_help.rst
+/user/reference/translations/po-templates.rst       >>>>>>           /user/reference/translations/translation-best-practices.rst     ettext manual <http://www.gnu.org/software/gettext
+/user/explanation/launchpad-mailing-lists.rst       >>>>>>           /user/explanation/collaborating-using-launchpad.rst      <https://launchpad.net/people/+me/+editemails>`_.
+/user/explanation/your-launchpad-account.rst       >>>>>>           /user/explanation/what-is-launchpad.rst      account <create-and-personalise-your-launchpad-ac
+/user/explanation/translating-with-launchpad/prepare-to-translate.rst       >>>>>>           /user/explanation/translating-with-launchpad/translating-with-launchpad.rst     which languages you want to work with <https://lau
+/user/explanation/feature-highlights/product-series.rst       >>>>>>           /user/explanation/feature-highlights/bug-branch-linking.rst     = .. include:: /includes/important_not_revised_hel
+/user/explanation/launchpad-api/launchpadlib.rst       >>>>>>           /user/explanation/launchpad-api/launchpad-web-service.rst      The file uploaded was not recognized as an image;
+/user/explanation/projects/index.rst       >>>>>>           /user/explanation/projects/publishing-files.rst     project announcements <publishing-project-announce
+/user/explanation/projects/publishing-files.rst       >>>>>>           /user/explanation/projects/registering-project.rst     =========== .. include:: /includes/important_not_r
