@@ -1,37 +1,32 @@
+#  Import required methods and packages
 import glob
 import os
-from import_page import import_page
-from duplicheck import duplicheck
+from page_append import page_append  
+from duplichecker import duplichecker
+from variables import scan_dir, file_types
 
-rst_files = glob.glob("/home/charles.odada@canonical.com/Documents/Work Repos/launchpad-manual/docs/**/*.rst", recursive=True)
-file_paths = []
-
+#  Perform recursive search in selected folder and create a list of all file paths of specified type(s)
+only_paths = []
+for file_type in file_types:
+    type_files = glob.glob(scan_dir+ "/**/" + file_type, recursive=True)
+    only_paths+=type_files
+    
+#  Store acquired file paths in a file for reference
 open("dry-files/all-paths.txt","w")
-
-for path in rst_files:
+for path in only_paths:
     with open("dry-files/all-paths.txt", "a") as all_paths:
         all_paths.write(path + '\n')
-    file_paths.append(path)
 
+#  Create/open a txt files to store file paths with duplicated content
 open("dry-files/duplifiles.txt", "w")
 
-all_pages = import_page(file_paths)  #Create phrases to be compared from two files ---> This should be moved to duplicheck.py so all the paths are available there
-while len(file_paths) > 1:
-    duplicheck(all_pages,file_paths)
-    all_pages.pop(0)
-    file_paths.pop(0)
+#  Use the page_append method to extract the data from all file paths as a list
+all_pages = page_append(only_paths) 
+
+#  Use the duplichecker to identify file paths with duplicated content. Repeat until only one file path remains in list of only_paths
+while len(only_paths) > 1: #  This loop ensures that each file will be compared against the rest
+    duplichecker(all_pages,only_paths)
+    all_pages.pop(0)  #  Remove the page at index 0 from the list of page data
+    only_paths.pop(0) # Remove the file path at index 0 in the only_paths list
 
 
-    # duplichecker = duplicheck(phrases) 
-    # if duplichecker[0] == True:  #Compare two phrases
-    #     print ('duplicode')
-    #     path1 = file_paths[0].split('/docs')
-    #     path2 = file_paths[1].split('/docs')
-    #     with open("dry-files/duplifiles.txt", "a") as duplifiles:
-    #         duplifiles.write(path1[1] + '       >>>>>>           ' + path2[1] + '     ' + duplichecker[2] + '\n')
-
-    # file_paths.pop(0)
-#As is, one file is only compared to the next one. We need one file to be compared to each and every file before we pop the 0th index
-
-# dfs = [pd.read_rst(file) for file in rst_files]
-# combined_data = pd.concat(dfs, ignore_index=True)

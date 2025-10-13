@@ -1,6 +1,3 @@
-a = "aklsflsjas"
-b = "lx"
+from variables import scan_dir
 
-c = b in a
-
-print(c)
+print (scan_dir)
