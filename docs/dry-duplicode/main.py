@@ -5,6 +5,8 @@ from page_append import page_append
 from duplichecker import duplichecker
 from variables import scan_dir, file_types
 
+counter = 0
+
 #  Perform recursive search in selected folder and create a list of all file paths of specified type(s)
 only_paths = []
 for file_type in file_types:
@@ -25,7 +27,9 @@ all_pages = page_append(only_paths)
 
 #  Use the duplichecker to identify file paths with duplicated content. Repeat until only one file path remains in list of only_paths
 while len(only_paths) > 1: #  This loop ensures that each file will be compared against the rest
-    duplichecker(all_pages,only_paths)
+    if duplichecker(all_pages,only_paths) == "Duplicode":  #  If duplicode is found in the current iteration
+        counter += 1
+        print (counter)
     all_pages.pop(0)  #  Remove the page at index 0 from the list of page data
     only_paths.pop(0) # Remove the file path at index 0 in the only_paths list
 

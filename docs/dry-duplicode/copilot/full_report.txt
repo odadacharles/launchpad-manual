@@ -1,0 +1,501 @@
+Analyzing 319 .rst files (excluding build/venv dirs)
+
+================================================================================
+DUPLICATE CONTENT ANALYSIS REPORT
+================================================================================
+
+Total substantial duplicates found: 123
+
+Breakdown by category:
+  - General documentation: 70 duplicates
+  - Version control instructions: 12 duplicates
+  - API documentation: 11 duplicates
+  - UI/Procedure instructions: 11 duplicates
+  - Examples/Explanations: 11 duplicates
+  - Setup/Installation instructions: 7 duplicates
+  - Legal/License text: 1 duplicates
+
+================================================================================
+DETAILED DUPLICATE FINDINGS
+================================================================================
+
+### DUPLICATE #1
+Content Type: API documentation
+Character Count: 2797 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/launchpad-api/launchpad-web.rst
+    Location: around line 2
+  • user/explanation/launchpad-api/launchpad-web-service.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+{u'admins_collection_link': u'http://api.staging.launchpad.net/1.0/~your-user-name/admins', u'confirmed_email_addresses_collection_link': u'http://api.staging.launchpad.net/1.0/~your-user-name/confirmed_email_addresses', u'date_created': u'2005-06-06...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #2
+Content Type: Setup/Installation instructions
+Character Count: 718 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • developer/how-to/running-quickstart.rst
+    Location: around line 2
+  • developer/how-to/running.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+We'd like Launchpad to run on other operating systems, especially `Debian GNU/Linux <https://www.debian.org/>`_, so that more people can contribute to Launchpad development. If you're interested in working on Launchpad portability, please `let us kno...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #3
+Content Type: Version control instructions
+Character Count: 713 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/work-with-code-hosted-on-launchpad/git-hosting-on-launchpad.rst
+    Location: around line 2
+  • user/explanation/working-with-code/git-hosting.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+# The path argument should be the clone URL for your repository or project, without the # leading "https://git.launchpad.net/". For example, if you want to # generate a token for https://git.launchpad.net/~user/example-project, use # path="~user/exam...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #4
+Content Type: Version control instructions
+Character Count: 684 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • developer/explanation/code.rst
+    Location: around line 3
+  • dry-duplicode/dry-files/code.rst
+    Location: around line 3
+
+Text Excerpt (first 250 chars):
+- haproxy configuration (encoded in the https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services) - frontends (`turnip-pack-frontend-git`, \`turnip-pack-frontend-ssh`, \`turnip-pack-frontend-http`) - \`turnip-pack-virt\` for path virt...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #5
+Content Type: General documentation
+Character Count: 678 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • dry-duplicode/dry-files/asking-for-help.rst
+    Location: around line 2
+  • user/explanation/answers/asking-for-help.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+- ``Open``: this question needs an answer, either because it is new or because a previous answer didn't completely solve the problem. - ``Needs information``. - ``Answered``: someone has answered the question but the original reporter hasn't yet said...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #6
+Content Type: Version control instructions
+Character Count: 629 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • developer/explanation/code.rst
+    Location: around line 3
+  • dry-duplicode/dry-files/code.rst
+    Location: around line 3
+
+Text Excerpt (first 250 chars):
+- The `git` and `bzr` / `brz` clients (neither of which is part of Launchpad, but their behaviours are important to us) - Connectivity to Launchpad (git, git+ssh, and https for Git; SFTP and bzr+ssh for Bazaar) - Hosting infrastructure - The underlyi...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #7
+Content Type: API documentation
+Character Count: 626 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/launchpad-api/launchpad-web.rst
+    Location: around line 2
+  • user/explanation/launchpad-api/launchpad-web-service.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+Like most web service providers we publish `a prose document <http://launchpad.net/+apidoc/>`_ describing the capabilities of all our resources. But we also publish a machine-readable document containing the same information. It's written in `WADL <h...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #8
+Content Type: General documentation
+Character Count: 587 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/launchpad-api/launchpad-web.rst
+    Location: around line 2
+  • user/explanation/launchpad-api/launchpad-web-service.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+Throughout this document I've revealed seemingly secret information about the capabilities of various resources. It makes intuitive sense that you should send a GET to a resource's URL to find out more about it, but how are you supposed to know that ...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #9
+Content Type: Setup/Installation instructions
+Character Count: 577 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/work-with-code-hosted-on-launchpad/git-hosting-on-launchpad.rst
+    Location: around line 2
+  • user/explanation/working-with-code/git-hosting.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+If you have several different Bazaar branches that form part of the same project, or if your Bazaar branches constitute packaging for a project whose upstream is in revision control elsewhere, then you may well want to do a more careful conversion. F...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #10
+Content Type: UI/Procedure instructions
+Character Count: 561 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/work-with-code-hosted-on-launchpad/git-hosting-on-launchpad.rst
+    Location: around line 2
+  • user/explanation/working-with-code/git-hosting.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+- Go to the main page in Launchpad for a project you maintain, and follow the "Code" link under "Configuration options". - Set "Version control system" to "Git" if necessary. - Select "Import a Git repository hosted somewhere else". - Fill in the rep...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #11
+Content Type: General documentation
+Character Count: 538 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/work-with-code-hosted-on-launchpad/import-code-into-launchpad.rst
+    Location: around line 2
+  • user/explanation/working-with-code/code-imports.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+There's a lot of free software code available in CVS, Subversion (SVN) and Git repositories, or Bazaar repositories that aren't hosted on Launchpad. Sometimes you're going to want to have this code available on Launchpad in Bazaar. Perhaps you use Ba...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #12
+Content Type: Version control instructions
+Character Count: 510 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • developer/how-to/running-quickstart.rst
+    Location: around line 2
+  • developer/how-to/running.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+1. Install ``pre-commit`` itself. If your host system is Ubuntu 20.10 or newer, then ``sudo apt install pre-commit`` is enough; otherwise, you can install it in your user account (`pipx <https://pypi.org/project/pipx/>`_ works well to keep it isolate...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #13
+Content Type: General documentation
+Character Count: 509 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/work-with-code-hosted-on-launchpad/git-hosting-on-launchpad.rst
+    Location: around line 2
+  • user/explanation/working-with-code/git-hosting.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+In either case, Launchpad will mirror the whole repository from the remote site, and will keep its copy up to date regularly. You won't be able to push directly to the imported repository on Launchpad, but you can create another repository in the sam...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #14
+Content Type: API documentation
+Character Count: 473 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/launchpad-api/launchpad-web.rst
+    Location: around line 2
+  • user/explanation/launchpad-api/launchpad-web-service.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+What's not defined in this file? Mainly, there's a lack of information about our URL structure. You've already seen that you can get a description of any person in Launchpad by sending GET to ``http://api.staging.launchpad.net/1.0/~{name}`` and plugg...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #15
+Content Type: General documentation
+Character Count: 461 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/work-with-code-hosted-on-launchpad/import-code-into-launchpad.rst
+    Location: around line 2
+  • user/explanation/working-with-code/code-imports.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+For this reason, we don't have an automated process for the import. Instead, you `request one <https://code.launchpad.net/+code-imports/+new>`_ and we put it in a queue. Sometimes it takes just an hour or two, sometimes it can take days to get a good...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #16
+Content Type: UI/Procedure instructions
+Character Count: 447 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • dry-duplicode/dry-files/launchpad-badge-kit.rst
+    Location: around line 2
+  • user/reference/launchpad-and-community/launchpad-badge-kit.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+Insert HTML like the following into the page where you want to display the badge, replacing ``FILL_ME_IN`` with either a project name or a Launchpad username (if a username, remember to include the ``~``. The default width of 160px is good for most c...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #17
+Content Type: General documentation
+Character Count: 440 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/reference/consumer-hosting.rst
+    Location: around line 2
+  • user/explanation/projects/registering-project.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+We recommend that projects share all information types with their developer teams. Sharing with your organisation team will also ensure your co-workers are informed and can do their job. Avoid sharing with users because they leave projects and organi...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #18
+Content Type: General documentation
+Character Count: 415 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • dry-duplicode/dry-files/answer-tracker.rst
+    Location: around line 2
+  • user/explanation/answers/answer-tracker.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+**Searchable Reports:** Various reports are offered making it easy to find the questions you are interested in. The **Open** report is perfect for users looking for a question still needing an answer. The **Answered** report is great for users trying...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #19
+Content Type: Setup/Installation instructions
+Character Count: 387 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • developer/how-to/running-quickstart.rst
+    Location: around line 2
+  • developer/how-to/running.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+Launchpad development setup makes significant changes to your machine; it's nice to be unaffected by those when you're not doing such development. Using containers means that the version of Ubuntu on your host system doesn't need to match Launchpad's...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #20
+Content Type: General documentation
+Character Count: 380 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/launchpad-api/launchpad-web.rst
+    Location: around line 2
+  • user/explanation/launchpad-api/launchpad-web-service.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+Here's how `httplib2 <http://code.google.com/p/httplib2/>`_ does caching (launchpadlib is based on httplib2). When it makes a GET request and gets a document back, it stores the document in a file, along with all of the HTTP response headers. The nex...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #21
+Content Type: General documentation
+Character Count: 373 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/projects/project-translations/import-translation-templates.rst
+    Location: around line 2
+  • user/how-to/projects/project-translations/import-project-translations.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+**Exception:** In the simple case of having only one template file in the branch and one entry in Launchpad Translations, these two are always matched and the translation domain attribute of the Launchpad Translations entry is updated with whatever t...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #22
+Content Type: API documentation
+Character Count: 369 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/launchpad-api/launchpad-web.rst
+    Location: around line 2
+  • user/explanation/launchpad-api/launchpad-web-service.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+That's your indication that the team was created, and that you can find the new team at ``http://api.staging.launchpad.net/1.0/~{name}``. Now you can go over to the new team and make additional HTTP requests to customize it, add memberships, and so o...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #23
+Content Type: Examples/Explanations
+Character Count: 366 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/launchpad-api/launchpad-web.rst
+    Location: around line 2
+  • user/explanation/launchpad-api/launchpad-web-service.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+Unauthenticated requests can see all public objects, which are the majority, but they can't see private objects (such as hidden email addresses, security-sensitive bugs, or private teams), they can't change anything, and of course they have no concep...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #24
+Content Type: Version control instructions
+Character Count: 365 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/work-with-code-hosted-on-launchpad/git-hosting-on-launchpad.rst
+    Location: around line 2
+  • user/explanation/working-with-code/git-hosting.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+There are useful recommendations from `launchpad team members <https://jugmac00.github.io/blog/migrate-a-repository-from-bazaar-to-git/>`_ and `other sources <https://astrofloyd.wordpress.com/2012/09/06/convert-bzr-to-git/>`_ for how to convert from ...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #25
+Content Type: General documentation
+Character Count: 364 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/projects/project-translations/import-translation-templates.rst
+    Location: around line 2
+  • user/how-to/projects/project-translations/import-project-translations.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+1. In the file name itself: ``domain.pot`` or ``po/domain.pot``, etc. 2. If the file name is generic (one of messages.pot, template.pot or untitled.pot), in the containing directory: ``domain/messages.pot`` or ``po/domain/messages.pot`` 3. Or in the ...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #26
+Content Type: Version control instructions
+Character Count: 354 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/work-with-code-hosted-on-launchpad/git-hosting-on-launchpad.rst
+    Location: around line 2
+  • user/explanation/working-with-code/git-hosting.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+- Go to the `Request a code import <https://code.launchpad.net/+code-imports/+new>`_ page. - Select "Git" for both the version control system and the target version control system. - Fill in the other details as above. - Launchpad will create the rep...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #27
+Content Type: General documentation
+Character Count: 348 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/launchpad-api/launchpad-web.rst
+    Location: around line 2
+  • user/explanation/launchpad-api/launchpad-web-service.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+The Launchpad website's homepage contains links to other parts of Launchpad. This homepage serves the same purpose: it tells you about the major parts of the Launchpad web service. Once you've got the hang of the web service you can bypass the web se...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #28
+Content Type: Version control instructions
+Character Count: 348 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/work-with-code-hosted-on-launchpad/import-code-into-launchpad.rst
+    Location: around line 2
+  • user/explanation/working-with-code/code-imports.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+Launchpad provides a free service which imports the trunk of a project from Subversion, CVS, or Git to `Bazaar <http://bazaar-vcs.org>`_, or from Git to Git, and then keeps that import up to date. This allows you to make your own branches from the pr...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #29
+Content Type: API documentation
+Character Count: 346 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/launchpad-api/launchpad-web.rst
+    Location: around line 2
+  • user/explanation/launchpad-api/launchpad-web-service.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+The person search operation is a good example of a read operation. Launchpad exposes a list of people at `<http://api.staging.launchpad.net/1.0/people>`_, but for most applications you don't want to page through the user accounts the way you would on...
+
+--------------------------------------------------------------------------------
+
+### DUPLICATE #30
+Content Type: General documentation
+Character Count: 341 characters
+Number of Files: 2
+
+Files containing this duplicate:
+  • user/how-to/launchpad-api/launchpad-web.rst
+    Location: around line 2
+  • user/explanation/launchpad-api/launchpad-web-service.rst
+    Location: around line 2
+
+Text Excerpt (first 250 chars):
+Like read operations, write operations can return any JSON document. Most often, they return nothing--only a status code of 200 ("OK") to show that the operation was carried out. But operations that create new Launchpad objects, like newTeam, do some...
+
+--------------------------------------------------------------------------------
+

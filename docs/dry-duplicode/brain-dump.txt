@@ -7,3 +7,14 @@ Methods
     5. What to do when a duplicate is found
     6. What to do when no duplicate is found
 7. Append duplicate file paths to duplicates list
+8. Disposable code / text - When an AI generates code that doesn't do what it's
+supposed to do, it may not seem worth it to try and debug the code because it
+was produced "cheaply" with potential blindspots. If the code is fatally flawed,
+the time spent debugging it will have been better spent starting a fresh. We 
+see the same issue when we get a PR in documentation where the doc is generated
+by an LLM. We don't know how much thought went into the development of the doc
+thus we don't know if it's worth our time to actually review it in case it 
+turns out to be a waste of time. This is why it's important to work with LLMs
+incrementally, allowing you to review the code while it's still in progress,
+instead or trying to review a large final output that may or may not have key
+issues.

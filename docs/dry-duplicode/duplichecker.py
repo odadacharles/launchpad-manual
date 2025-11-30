@@ -32,7 +32,7 @@ def duplichecker(all_pages, file_paths):
                 path2 = file_paths[comparison_pages.index(comp_page)].split('/docs')  #  Set for Canonical Sphinx starterpack files. Remember to change in other applications
                 with open("dry-files/duplifiles.txt", "a") as duplifiles:
                     duplifiles.write(path1[1] + '       >>>>>>           ' + path2[1] + '           ' + copy_phrase + '\n')
-                return  #  Escape from loop
+                return  'Duplicode' #  Escape from loop
             
             else:  #shift the start and the end of the target phrase forward by the 'shift_val' number of characters
                 target_start+=shift_val 
