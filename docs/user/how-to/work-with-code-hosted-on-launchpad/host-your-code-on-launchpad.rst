@@ -5,20 +5,19 @@ Host your project's code on Launchpad
 
 .. include:: /includes/important_not_revised_help.rst
 
-You can host your project's source code using Launchpad and Bazaar. If
-you're new to Bazaar, or distributed version control in general, take a
-look at the `Bazaar mini-tutorial <http://doc.bazaar-vcs.org/bzr.dev/en/mini-tutorial/index.html>`_
+You can host your project's source code using Launchpad and Git. If you're new 
+distributed version control, take a look at the `Git mini-tutorial <https://rogerdudler.github.io/git-guide/>`_
 first.
 
-When you push a Bazaar branch to Launchpad, it's usually associated with
+When you push a Git branch to Launchpad, it's usually associated with
 a project that's also registered in Launchpad. Other people can then get
-hold of your Bazaar branch, modify it, and push their own version back
+hold of your Git branch, modify it, and push their own version back
 up to Launchpad for everyone to see.
 
 This guide shows you how to:
 
 -  tell the world your project uses Launchpad to host its source code
--  push your first Bazaar branch up to Launchpad
+-  push your first Git branch up to Launchpad
 -  set that branch as your project's development focus -- i.e. ``trunk``
 -  hand the branch over to a team, so several people can commit code to
    it.
@@ -38,25 +37,20 @@ you'll find a ``Configuration progress`` section in the right-hand column.
 Click ``Configure project branch`` and either select an existing branch or
 set up a new one.
 
-Push a Bazaar branch to your project
+Push a Git branch to your project
 ------------------------------------
 
-Bazaar comes with a plug-in that lets you push to and pull from
-Launchpad directly from within Bazaar.
+Git lets you push to and pull from Launchpad directly from within your local PC.
 
-If you haven't already, you need to perform a couple of one-time setup
-tasks:
-
-1. `add your SSH key to Launchpad <https://launchpad.net/people/+me/+editsshkeys>`_
-2. and then log in to Launchpad from Bazaar by typing ``bzr
-   launchpad-login`` in your terminal.
+If you haven't already, you need to create an SSH key and `import it into Launchpad <import-your-ssh-keys>`_.
+Edit your ``~/.gitconfig file`` so you can use :ref:`abbreviations for repositories <host-a-git-repository-on-launchpad>`.
 
 To push your branch up to Launchpad, open your terminal and go to your
-Bazaar branch. Next up, type:
+git branch. Next up, type:
 
 ::
 
-   bzr push lp:~your-id/project-id/branch-name
+   git push lp:~your-id/project-id/branch-name
 
 -  ``~your-id``: this is your Launchpad id, which is the portion of `your profile page <https://launchpad.net/people/+me>`_ URL that begins with the tilde
 -  ``project-id``: the id of the project in Launchpad, which you can find
@@ -65,13 +59,13 @@ Bazaar branch. Next up, type:
    ``trunk``, ``main``, or ``experimental``.
 
 Replace ``project-name`` with your project's Launchpad id. The id is the
-final part of your project overview page's URL: e.g. ``bzr`` in
-`<https://launchpad.net/bzr>`_.
+final part of your project overview page's URL: e.g. ``inkscape`` in
+`<https://launchpad.net/inkscape/>`_.
 
 See your branch in place
 ------------------------
 
-Once Bazaar has pushed your branch to Launchpad, Launchpad will scan the
+Once Git has pushed your branch to Launchpad, Launchpad will scan the
 revisions in your branch and:
 
 -  list the branch on both `your own code overview page <https://code.launchpad.net/people/+me>`_ and that of the project. To get to each, select the "Branches" tab.
@@ -87,9 +81,8 @@ focus of development; i.e. which is the trunk.
 Setting a trunk branch is useful to:
 
 -  tell people which branch they should download
--  define which branch Launchpad should provide when someone enters ``bzr branch lp:your-project``
+-  define which branch Launchpad should provide when someone enters ``git branch lp:your-project``
 -  act as the default target when someone proposes a merge
--  act as the basis for `stacked branches <http://doc.bazaar-vcs.org/bzr.dev/en/user-guide/index.html#using-stacked-branches>`_.
 
 Visit your project's code overview page and follow the link inviting you
 to set a development focus.
