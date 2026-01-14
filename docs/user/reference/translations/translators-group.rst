@@ -14,7 +14,7 @@ software.
 There is one Launchpad localization team appointed for each language.
 
 We encourage Ubuntu, Debian, Fedora, GNOME, KDE, Mozilla,
-!OpenOffice.org and all other translators dedicated to a specific
+OpenOffice.org and all other translators dedicated to a specific
 project to join the localization team appointed for their language.
 
 We also encourage project maintainers to appoint the **Launchpad
@@ -32,9 +32,9 @@ find a list of steps to follow in order to use Launchpad Translations as
 the translation tool for you project and have it translated into many
 languages.
 
--  Before proceeding, please take a moment and see how you can use Launchpad and what you should do in order to have your project translated. You can find these information at `Translating your project help pages <https://help.launchpad.net/Translations/YourProject>`__.
+-  Before proceeding, please take a moment and see how you can use Launchpad and what you should do in order to have your project translated. You can find these information at :ref:`Translating your project help pages <translating-your-project>`.
 
--  Choose a translation permissions policy and appoint the "Launchpad Translators" group for doing the translation. Follow this link to find more info about `Choosing permissions policy <https://help.launchpad.net/Translations/YourProject/PermissionPolicies>`__. We recommend using the *Structured* policy, as a measure to assure translation quality.
+-  Choose a translation permissions policy and appoint the "Launchpad Translators" group for doing the translation. Follow this link to find more info about :ref:`Choosing permissions policy <choosing-a-permissions-policy>`. We recommend using the *Structured* policy, as a measure to assure translation quality.
 
 -  The direct link to your project permissions policy is:
    https://translations.launchpad.net/%3CYOUR-PROJECT-NAME%3E/+settings.
@@ -63,7 +63,7 @@ Below is a list of steps you might follow in order to start using
 Launchpad Translations for translating your favorite project or
 distributions.
 
--  Before doing any translation work please take a moment and learn how to use Launchpad as your translation tool. For more information `check the Launchpad Translations help pages <https://help.launchpad.net/Translations/StartingToTranslate>`__.
+-  Before doing any translation work please take a moment and learn how to use Launchpad as your translation tool. For more information :ref:`check the Launchpad Translations help pages <preparing-to-translate>`.
 
 -  Consult the `list of translations teams <https://translations.launchpad.net/+groups/launchpad-translators/>`__ and check the team assigned to your language. If there is no team assigned for your language, please follow the required step to create a new one. Below you will find more information on how to create a new team.
 
@@ -73,8 +73,6 @@ distributions.
 
 -  Follow the rules of your team, communicate and keep in touch with the
    team.
-
--  You may want to join the `Launchpad Translators mailing list <https://launchpad.net/~launchpad-translators>`__ and get in touch with other translators and teams.
 
 Launchpad localization teams
 ----------------------------
@@ -124,12 +122,11 @@ Launchpad Translators group:
 
 -  **Coordinator**. The team should have a coordinator with a stable
    contact e-mail address visible to logged-in Launchpad users. The
-   coordinator should subscribe to the launchpad-translators mailing
-   list and forward any relevant announcements or information to the
+   coordinator should forward any relevant announcements or information to the
    team. As the coordinator, you are the primary contact person for the
    team and the person who make things happen.
 
-   -  As the coordinator of a Launchpad localization team, it is higly recommended to join the `Launchpad Translators mailing list <https://launchpad.net/~launchpad-translators>`__.
+   -  As the coordinator of a Launchpad localization team, it is higly recommended to join the `Launchpad Translators team <https://launchpad.net/~launchpad-translators>`__.
 
 -  **Apply**. `Send a support request <https://answers.launchpad.net/rosetta/+addquestion>`__ for the Launchpad Translations Coordinators to appoint your team in the Launchpad Translators group. Please include a link to your team and a short note explaining how you have addressed the points above.
 

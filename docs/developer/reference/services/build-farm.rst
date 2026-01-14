@@ -34,7 +34,8 @@ Builders do not have direct access to the Internet, but rather need to
 acquire an authentication token to be able to access a restricted set of
 URLs on the Internet via a proxy. This can either be a squid proxy or the
 :doc:`fetch service <fetch-service>`, determined by a ``use_fetch_service``
-flag. Currently, only snaps can use the fetch service.
+flag. Currently, the fetch service can only be used for building snaps, charms,
+rocks and sourcecraft packages.
 
 Builder regions are physically co-located and consist of machines of the
 same architecture family.
@@ -53,7 +54,7 @@ Documentation
 -------------
 * `Documentation for launchpad-buildd <https://launchpad-buildd.readthedocs.io/en/latest/index.html>`_
 * `Documentation for the Launchpad CI runner <https://lpci.readthedocs.io/en/latest/>`_
-* `Documentation for Launchpad CI <https://help.launchpad.net/Code/ContinuousIntegration>`_
+* :ref:`Documentation for Launchpad CI <continuous-integration>`
 
 Git repositories
 ----------------
@@ -87,7 +88,7 @@ Related specifications (only accessible for Canonical employees)
 
 Log files
 ---------
-See `https://wiki.canonical.com/Launchpad/FreshLogs <https://wiki.canonical.com/Launchpad/FreshLogs>`_.
+See `Reading Launchpad logs via rsync <https://canonical-launchpad-admin-manual.readthedocs-hosted.com/en/latest/reference/reading-launchpad-logs-via-rsync/>`_.
 
 Production
 ~~~~~~~~~~
@@ -169,7 +170,7 @@ Search for "build" in https://git.launchpad.net/canonical-is-prometheus/tree/ols
 
 Common support cases
 --------------------
-See `Launchpad's playbook for support rotation <https://wiki.canonical.com/Launchpad/SupportRotation#Builder>`_
+See `Launchpad's playbook for support rotation <https://canonical-launchpad-admin-manual.readthedocs-hosted.com/en/latest/howto/builder/>`_
 
 More information
 ----------------

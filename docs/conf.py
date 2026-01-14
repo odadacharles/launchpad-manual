@@ -24,7 +24,7 @@ import yaml
 #
 # TODO: Update with the official name of your project or product
 
-project = "Launchpad Manual"
+project = "Launchpad"
 author = "Canonical Ltd."
 
 
@@ -34,7 +34,7 @@ author = "Canonical Ltd."
 #
 # TODO: To disable the title, set to an empty string.
 
-html_title = "project" + " documentation"
+html_title = project + " manual"
 
 
 # Copyright string; shown at the bottom of the page
@@ -160,7 +160,8 @@ html_context = {
 # - https://git.launchpad.net/example
 #
 html_theme_options = {
-    "sidebar_hide_name": True,
+    "source_edit_link": "https://github.com/canonical/launchpad-manual/",
+#    "sidebar_hide_name": True,
 }
 
 # Project slug; see https://meta.discourse.org/t/what-is-category-slug/87897
@@ -214,6 +215,9 @@ templates_path = ["_templates"]
 
 redirects = {}
 
+# Add redirects, so they can be updated here to land alongside docs being moved
+rediraffe_branch = "main"
+rediraffe_redirects = "redirects.txt"
 
 ###########################
 # Link checker exceptions #
@@ -273,7 +277,7 @@ linkcheck_ignore = [
     r"https://launchpad\.net/frobnob/.*",
     r"https://buildbot\.net.*", #ignore, expired SSL certificate
     r"https://docs\.buildbot\.net/.*", #ignore, expired SSL certificate
-
+    "https://documentation.help/Bazaar-help/sending_changes.html#understanding-merge-directives",  #403 error. The link works in browser
     "Trunk/Glue",  #  needs update
     "/Background",
     "/Concepts",  #  needs update
@@ -285,7 +289,6 @@ linkcheck_ignore = [
     r"https://github\.com/canonical/fetch-operator*",  #private
     r"https://git\.launchpad\.net/charm\-launchpad\-buildd\-image\-modifier/.*",  #private
     "https://git.zx2c4.com/cgit/",  #unfortunately very flaky
-    "https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys",  #private
     "https://staging.launchpad.net",  #ignore, staging launchpad
     r"https://wiki\.canonical\.com/.*",  #private
     r"https://www\.nongnu\.org/.*",
@@ -315,7 +318,6 @@ linkcheck_ignore = [
     "/../YourProject/ImportingTemplates",
     "Answer syntax parsing <Comments>",
     "https://help.ubuntu.com/community/SSO/FAQs", #timeout, should be temporary
-    "http://www.mail-archive.com/", #times out but works in browser. Remove from list after mailing list docs are removed
 ]
 
 
@@ -364,6 +366,7 @@ extensions = [
     "sphinx_last_updated_by_git",
     "sphinx.ext.intersphinx",
     "sphinx_sitemap",
+    "sphinxext.rediraffe",
 ]
 
 # Excludes files or directories from processing
@@ -376,6 +379,7 @@ exclude_patterns = [
 
 html_js_files = [
     'js/bundle.js',
+    'issue_links.js',
 ]
 
 # Specifies a reST snippet to be appended to each .rst file
@@ -389,9 +393,9 @@ rst_epilog = """
 
 # Feedback button at the top; enabled by default
 #
-# TODO: To disable the button, uncomment this.
+# To disable the button, uncomment this.
 
-# disable_feedback_button = True
+disable_feedback_button = True
 
 
 # Your manpage URL

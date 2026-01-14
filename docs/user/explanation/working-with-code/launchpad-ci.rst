@@ -1,3 +1,5 @@
+.. _continuous-integration:
+
 Continuous Integration
 ======================
 
@@ -43,5 +45,4 @@ Support
 -------
 
 Employees of Canonical can get support at the Launchpad channel on
-Mattermost. External users can use the usual
-`channels <https://help.launchpad.net/>`__.
+Mattermost. External users can use the usual :ref:`channels <get-help>`.

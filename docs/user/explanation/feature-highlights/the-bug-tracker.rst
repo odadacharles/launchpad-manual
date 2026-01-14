@@ -8,14 +8,7 @@ The Launchpad bug tracker
 This document describes the extra data interface to
 the bug tracker in Launchpad that can be used by bug reporting tools
 such as `Apport <https://launchpad.net/Apport>`__. If you have questions
-or comments about this document, please address them to
-
-::
-
-   #launchpad
-
-on irc.libera.chat, or ask on the `launchpad-users mailing
-list <https://lists.ubuntu.com/mailman/listinfo/launchpad-users>`__.
+or comments about this document, please `reach out to us <get-help>`.
 
 Overview
 --------
@@ -354,23 +347,14 @@ Branch integration
 ~~~~~~~~~~~~~~~~~~
 
 Launchpad can be used to keep track of development being done by your
-community on multiple independent branches. This is because Launchpad
-has a branch management subsystem designed to work with Bazaar, a fast,
-distributed revision control system written in Python.
+community on multiple independent branches.
 
-It is not necessary for your project "trunk" to use Bazaar in order to
-reap these benefits. The main project can continue to use Subversion or
-CVS, and Launchpad can publish a Bazaar version of that branch which
-your community can use to branch off while they do their own personal
-development. If they register their branches with Launchpad, and in
-doing so note that they are working on a particular bug in that branch,
-then Launchpad will notify the other subscribers to the bug that the
-branch exists and is being worked on. This allows people who have an
-interest in the bug either to pitch in and collaborate on the bug fix
-directly, or simply to know that they can find a fix by merging from the
-relevant branch.
-
-We expect this feature to be complete by the end of November 2006.
+If they register their branches with Launchpad, and in doing so note that they 
+are working on a particular bug in that branch, then Launchpad will notify the 
+other subscribers to the bug that the branch exists and is being worked on. 
+This allows people who have an interest in the bug either to pitch in and 
+collaborate on the bug fix directly, or simply to know that they can find a fix
+by merging from the relevant branch.
 
 Release management
 ~~~~~~~~~~~~~~~~~~

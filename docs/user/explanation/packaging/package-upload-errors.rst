@@ -74,7 +74,7 @@ The rejection email may also say something like:
 
    Rejected:
    File <UPLOADED_FILE> already exists in <LOCATION>, but uploaded version has different contents.
-   See more information about this error in https://help.launchpad.net/Packaging/UploadErrors.
+   See more information about this error in https://documentation.ubuntu.com/launchpad/user/explanation/packaging/package-upload-errors/
 
 This mean you have uploaded a file that already exists in the pointed
 'LOCATION' (your PPA or Ubuntu primary archive) but with different
@@ -118,4 +118,4 @@ Other errors
 ------------
 
 If you come across other errors when uploading a package to Launchpad,
-find us in #launchpad on irc.libera.chat or :ref:`get in touch by email <talk-to-us-about-launchpad>`.
+:ref:`contact the Launchpad team <get-help>`.

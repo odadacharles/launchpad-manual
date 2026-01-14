@@ -87,8 +87,8 @@ Before you can start using a PPA, whether it's your own or it belongs to a team,
 Your PPA's key
 ~~~~~~~~~~~~~~
 
-Launchpad generates a unique key for each PPA and uses it to sign any
-packages built in that PPA.
+Launchpad generates a unique key for the user's default PPA and reuses it to
+sign any packages built in the user's PPAs.
 
 This means that people downloading/installing packages from your PPA can
 verify their source. After you've activated your PPA, uploading its
@@ -159,7 +159,9 @@ were built becomes obsolete and unmaintained.
 What formats of packages are supported?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-At this stage only .deb packages are supported. If you are interested in building RPM or other package formats, please contact us on the `Launchpad users mailing list <https://lists.canonical.com/mailman/listinfo/launchpad-users>`_ to discuss that in more detail!
+At this stage only .deb packages are supported. If you are interested in 
+building RPM or other package formats, please contact the :ref:`Launchpad team <get-help>` 
+to discuss that in more detail!
 
 How many users can download packages from my PPA?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

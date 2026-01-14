@@ -57,14 +57,14 @@ Setting up Launchpad Development Container
 
 .. code-block:: shell-session
 
-   $ curl https://git.launchpad.net/launchpad/plain/utilities/rocketfuel-devstart > rocketfuel-devstart
+   curl https://git.launchpad.net/launchpad/plain/utilities/rocketfuel-devstart > rocketfuel-devstart
 
 
 .. code-block:: shell-session
 
-   $ chmod a+x rocketfuel-devstart
-   $ ./rocketfuel-devstart --help
-   $ ./rocketfuel-devstart --download
+   chmod a+x rocketfuel-devstart
+   ./rocketfuel-devstart --help
+   ./rocketfuel-devstart --download
 
 Specify the ``--download`` flag to download and import the latest Launchpad Dev LXD image. 
 To spin up new containers from an existing image just use run the script without any flags. 
@@ -133,25 +133,29 @@ On your local system, go to the workspace directory you specified during setup a
 
 .. code-block:: shell-session
     
-    $ git remote -v
-    $ git fetch 
-    $ git pull upstream master
+    git remote -v
+    git fetch
+    git pull upstream master
+
+.. note::
+
+    Because the development image is built periodically rather than on every change
+    to the main branch, it may not always contain the latest database migrations if
+    a new image hasn’t been published with those changes yet. If needed, refer to 
+    :ref:`this page <apply-database-schema-changes>` for instructions on applying 
+    the newer database schema changes.
 
 Now you should be able to start up Launchpad:
 
 .. code-block:: shell-session
 
-    $ make run
+    make run
 
 This only runs the basic web application.  `Codehosting
 <https://dev.launchpad.net/Code/HowToUseCodehostingLocally>`_ and `Soyuz
 <https://dev.launchpad.net/Soyuz/HowToUseSoyuzLocally>`_ require additional
 steps.
 
-For subsequent builds, you can just do ``make run`` right away.  You don't
-need to do ``make schema`` every time, and you should avoid it because it's
-expensive and because it will clean out any data you might have put into
-your test instance (through the web UI or by running other scripts).
 
 CSS Watch
 ---------
@@ -162,7 +166,7 @@ To enable that and make frontend changes more straight-forward, you can run:
 
 .. code-block:: shell-session
 
-    $ make css_watch
+    make css_watch
 
 This should be run in a separate terminal session alongside ``make run``.
 
@@ -183,10 +187,10 @@ started it:
 
     ^C
     [...shutting down Launchpad...]
-    $ 
+    
 
 Or you can be at a prompt in the same directory and run this:
 
 .. code-block:: shell-session
 
-    $ make stop
+    make stop

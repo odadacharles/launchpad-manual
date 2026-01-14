@@ -22,7 +22,7 @@ use Launchpad.net).
 Help, Dev, and News Content Licence
 -----------------------------------
 
-The documentation contained in the `Launchpad Help wiki <https://help.launchpad.net/>`_, the `Launchpad Development wiki <https://dev.launchpad.net/>`_, and on the `Launchpad blog <http://blog.launchpad.net/>`_ is owned by Canonical Ltd. and is licensed under a `Creative Commons Attribution 2.0 UK: England & Wales License <http://creativecommons.org/licenses/by/2.0/uk/>`_.
+The documentation contained in the :ref:`Launchpad manual <launchpad-manual-for-users>`, the `Launchpad Development wiki <https://dev.launchpad.net/>`_, and on the `Launchpad blog <http://blog.launchpad.net/>`_ is owned by Canonical Ltd. and is licensed under a `Creative Commons Attribution 2.0 UK: England & Wales License <http://creativecommons.org/licenses/by/2.0/uk/>`_.
 
 For information about the licence of the Launchpad source code itself,
 please see the :ref:`Launchpad License <launchpad-license>`.
@@ -52,7 +52,7 @@ these translations as sources for their own translations, without
 suffering licensing incompatibilities. Translations of groups of strings
 from the same project, to the extent forming a derivative work of the
 project, are made available to Canonical and in turn to you under the
-licence applicable to the project. See the `Translations Licensing FAQ <https://help.launchpad.net/Translations/LicensingFAQ>`_ for details.
+licence applicable to the project. See the :ref:`Translations Licensing FAQ <translations-licensing-faq>` for details.
 
 Bugs copyright
 ~~~~~~~~~~~~~~
@@ -169,7 +169,7 @@ under one or more of the following:
    -  `CC BY-NC-SA <http://creativecommons.org/licenses/by-nc-sa/3.0/>`_
    -  `CC BY-NC-ND <http://creativecommons.org/licenses/by-nc-nd/3.0/>`_
 
-To request approval to host content on Launchpad under a license not covered by the list above, bring it up on the `Launchpad users mailing list <https://lists.ubuntu.com/mailman/listinfo/launchpad-users>`_ for consideration before uploading it.
+To request approval to host content on Launchpad under a license not covered by the list above, :ref:`contact the Launchpad team <get-help>` for consideration before uploading it.
 
 Canonical reserves the right (but shall have no obligation) to
 pre-screen, review, flag, filter, modify, refuse, or remove any or all
@@ -303,8 +303,8 @@ uses not previously disclosed in this policy. If our information
 practices change at some time in the future we will post the policy
 changes to our web site to notify you of these changes. If you are
 concerned about how your information is used, you should check back at
-our web site periodically. We will also announce these changes on the
-Launchpad Users mailing list and on `<http://blog.launchpad.net>`_.
+our web site periodically. We will also announce these changes on 
+`<http://blog.launchpad.net>`_.
 
 Data retention
 --------------

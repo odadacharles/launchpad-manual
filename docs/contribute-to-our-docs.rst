@@ -15,8 +15,7 @@ https://github.com/canonical/launchpad-manual.
 If you have any questions or doubts, please don't hesitate to 
 reach out to us by any of these means:
 
-- Join the `#launchpad IRC channel`_ at `irc.libera.chat`_ and ask your
-  questions.
+- :ref:`Reach out to the Launchpad team <get-help>` and ask your questions.
 - Ask a question: https://answers.launchpad.net/launchpad
 - Send an e-mail to feedback@launchpad.net
 
@@ -76,12 +75,10 @@ You can also `follow Canonical's documentation team on Fosstodon`_ for the lates
 on upcoming events.
 
 
-.. _#launchpad IRC channel: irc://irc.libera.chat/launchpad
-.. _irc.libera.chat: irc.libera.chat
 .. _API documentation: http://people.canonical.com/~mwh/canonicalapi/
 .. _Diátaxis: https://diataxis.fr/
 .. _Ubuntu style guide: https://docs.ubuntu.com/styleguide/
-.. _CODA website: https://documentationacademy.org/
+.. _CODA website: https://documentation.academy/
 .. _CODA repository: https://github.com/canonical/open-documentation-academy/issues
 .. _discussion forum: https://discourse.ubuntu.com/c/community/open-documentation-academy/166
 .. _follow Canonical's documentation team on Fosstodon: https://fosstodon.org/@CanonicalDocumentation
