@@ -15,7 +15,7 @@ scanned in a page will most certainly cause errors. A shift value of 0 will
 cause an infinite loop. 
 
 '''
-scan_dir = "/home/charles.odada@canonical.com/Documents/Work Repos/launchpad-manual/docs/"  #  Directory to be scanned for specified file types
+scan_dir = "Enter-Folder-Path"  #  Directory to be scanned for specified file types
 file_types = ['*.rst']  #  File extensions for file types to be added to comparison list. Seperate file types with comma
 init_start = 140  #  Number of characters to skip before selecting the first character for scanning in each page
 phrase_length = 200 #  Length of phrase to compare. Long phrases will cause false negatives and short phrases will cause false positives 

@@ -8,3 +8,4 @@ _build
 __pycache__
 .idea/
 docs-backup/
+/docs/dry-duplicode/brain-dump.txt
