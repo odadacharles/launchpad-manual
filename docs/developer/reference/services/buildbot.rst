@@ -33,7 +33,12 @@ setup.
    proposals and then merge them back to the private “production” branch
    before deployment. In the ``master.cfg`` file, we have defined all
    the necessary configurations (schedulers, workers, job steps) for
-   buildbot. 
+   buildbot. The scheduler used for the two trunk builders is an
+   ``AggregatingScheduler``, which watches a development branch
+   (``master`` or ``db-devel``) for changes. When it sees a change, it
+   checks whether the last build for that branch succeeded or failed. If
+   the last build failed, it only starts a new build when the commit
+   message contains ``[testfix]``.
 
    1. The buildmaster has a custom ``buildbot-poll.py`` cron script
       which is responsible for merging the commits within the main Launchpad repository in the
@@ -156,3 +161,8 @@ of your build and review the summary to identify the cause of the failure.
 If you suspect the build is failing due to flakiness of the test
 infrastructure and not your changes, you can `restart the build
 <http://lpbuildbot.canonical.com/force>`__.
+
+This "force build" page is a custom addition to buildbot's web UI, because
+buildbot's built-in "Force Build" button does not work for our setup. Builds
+forced this way carry a distinctive "reason" attribute that the
+``buildbot-poll.py`` script recognises via the JSON API.
