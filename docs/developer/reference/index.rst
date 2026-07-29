@@ -18,12 +18,6 @@ Build-related services descriptions and resources.
 - :ref:`Fetch service <fetch-service>`
 - :ref:`Buildbot <buildbot-reference>`
 
-Email processing testing
-------------------------
-Email processing configuration options and testing.
-
-- :ref:`Launchpad and email <email-reference>`
-
 Code imports and hosting
 ------------------------
 Code hosting and code import resources.
@@ -37,9 +31,15 @@ Schedule of automatic translations tarball exports from Launchpad.
 
 - :ref:`Automatic translations tarball exports <automatic-translations-export>`
 
+Interactive testing of Email processing
+---------------------------------------
+Email processing configuration options and testing.
+
+- :ref:`Launchpad and email <email-reference>`
+
 Ubuntu-related services
 -----------------------
-What are the Ubuntu mirrors index service and the mirror prober?
+Scanning for Ubuntu mirrors and checking their health. 
 
 - :ref:`Mirror prober <mirror-prober-reference>`
 - :ref:`Ubuntu mirrors index <ubuntu-mirrors-index>`
