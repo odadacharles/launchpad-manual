@@ -4,9 +4,53 @@
 Reference
 =========
 
-Launchpad contributors are expected to follow certain coding standards. You'll
-also need technical reference material for services that make up the Launchpad
-platform when making contributions.
+Launchpad is composed of a monolith plus different services with distinct
+functions such as handling builds, code hosting, signing, translations,
+mirroring, and more. As a contributor working on any part of Launchpad, you
+are expected to follow certain conventions and standards in your work.
+
+Build-related services
+----------------------
+Build-related services descriptions and resources.
+
+- :ref:`Build farm <build-farm-reference>`
+- :ref:`Signing service <signing-service>`
+- :ref:`Fetch service <fetch-service>`
+- :ref:`Buildbot <buildbot-reference>`
+
+Email processing testing
+------------------------
+Email processing configuration options and testing.
+
+- :ref:`Launchpad and email <email-reference>`
+
+Code imports and hosting
+------------------------
+Code hosting and code import resources.
+
+- :ref:`Git hosting <git-hosting-reference>`
+- :ref:`Code import <code-import-reference>`
+
+Translation
+-----------
+Schedule of automatic translations tarball exports from Launchpad.
+
+- :ref:`Automatic translations tarball exports <automatic-translations-export>`
+
+Ubuntu-related services
+-----------------------
+What are the Ubuntu mirrors index service and the mirror prober?
+
+- :ref:`Mirror prober <mirror-prober-reference>`
+- :ref:`Ubuntu mirrors index <ubuntu-mirrors-index>`
+
+Mailing lists (archived)
+------------------------
+
+Launchpad mailing lists are no longer active, but the archives remain
+accessible.
+
+- :ref:`Launchpad public mailing lists archives <mailing-lists-archives>`
 
 Code conventions
 ----------------
@@ -19,51 +63,7 @@ tagging. These standards are enforced during code review.
 - :ref:`CSS style guide <css-style-guide>`
 - :ref:`Tagging bugs about Launchpad <tagging-bugs-about-launchpad>`
 
-Services
---------
 
-Launchpad is composed of many services that handle builds, code hosting,
-signing, translations, mirroring, and more.
-
-Build-related
-~~~~~~~~~~~~~
-
-- :ref:`Build farm <build-farm-reference>`
-- :ref:`Signing service <signing-service>`
-- :ref:`Fetch service <fetch-service>`
-- :ref:`Buildbot <buildbot-reference>`
-
-Email
-~~~~~
-
-- :ref:`Launchpad and email <email-reference>`
-
-Git-related
-~~~~~~~~~~~
-
-- :ref:`Git hosting <git-hosting-reference>`
-- :ref:`Code import <code-import-reference>`
-
-Translation
-~~~~~~~~~~~
-
-- :ref:`Automatic translations tarball exports <automatic-translations-export>`
-
-Ubuntu-related
-~~~~~~~~~~~~~~
-
-- :ref:`Mirror prober <mirror-prober-reference>`
-- :ref:`Ubuntu mirrors index <ubuntu-mirrors-index>`
-
-Mailing lists (archived)
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-Launchpad mailing lists are no longer active, but the archives remain
-accessible.
-
-- :ref:`Launchpad public mailing lists archives <mailing-lists-archives>`
-
-   
 .. toctree::
    :hidden:
 
