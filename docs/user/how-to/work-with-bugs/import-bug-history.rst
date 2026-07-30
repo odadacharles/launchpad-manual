@@ -2,6 +2,8 @@
    :description: Guide to importing your project's bug history into Launchpad 
       from external trackers.
 
+.. _import-bug-history:
+
 Import your project's bug history
 =================================
 

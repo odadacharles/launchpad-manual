@@ -1,6 +1,8 @@
 .. meta::
    :description: Guide to managing bugs through Launchpad's email interface.
 
+.. _manage-bugs-through-email:
+
 Managing bugs through email
 ===========================
 

@@ -3,6 +3,8 @@
    :description: Translation sharing and suggestions in Launchpad for reusing 
       translations.
 
+.. _translation-sharing-and-suggestions:
+
 Translation sharing and suggestions
 ===================================
 

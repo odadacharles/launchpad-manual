@@ -2,6 +2,8 @@
    :description: Bug supervisor role reference covering responsibilities, 
       permissions, and bug management workflows in Launchpad projects.
 
+.. _bug-supervisor:
+
 Bug supervisor
 ==============
 

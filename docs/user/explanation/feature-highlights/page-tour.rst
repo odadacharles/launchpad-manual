@@ -2,6 +2,8 @@
    :description: Tour Launchpad's page layout and navigation to understand how 
       the platform connects communities and facilitates collaboration.
 
+.. _launchpad-page-layout:
+
 Launchpad's page layout
 =======================
 

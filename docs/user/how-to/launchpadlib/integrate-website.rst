@@ -1,5 +1,11 @@
+.. meta::
+   :description: Integrate Launchpad into your website with authenticated
+      access.
+
+.. _authenticated-access-site-integration:
+
 Authenticated access for website integration
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+============================================
 
 If you want to integrate Launchpad's functionality into your own website, you 
 can't call ``Launchpad.login_with()``, because that will open up a web browser

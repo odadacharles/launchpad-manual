@@ -2,6 +2,8 @@
    :description: Authenticate launchpadlib from text-based browsers.
 
 
+.. _auth-launchpadlib-text-browser:
+
 Authenticate launchpadlib from a text-based browser
 ===================================================
 .. include:: /includes/important_not_revised_help.rst
