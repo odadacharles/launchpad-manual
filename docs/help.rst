@@ -18,7 +18,8 @@ We try to run a newcomer-friendly community; it's okay to ask basic questions
 and make obvious suggestions.
 
 If you are getting started using the Launchpad API, be sure to check out the 
-`API documentation <http://people.canonical.com/~mwh/canonicalapi/>`_.
+`API documentation <http://people.canonical.com/~mwh/canonicalapi/>`_. If you
+encounter an error with an OOPS message, see :ref:`Understanding OOPSes <what-is-an-oops>`.
 
 Login issues
 ------------
@@ -43,3 +44,5 @@ No matter where in Launchpad you found the bug, `report it against the launchpad
 in Launchpad.
 
 Thanks for helping us make Launchpad a great place to develop free software.
+
+

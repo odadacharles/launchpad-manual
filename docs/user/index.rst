@@ -51,7 +51,6 @@ contributions are tracked and how to manage mail from Launchpad.
   :ref:`Create and personalize your account <create-and-personalise-your-launchpad-account>` •
   :ref:`Manage your account <account-management>` •
   :ref:`Merge two or more accounts <merging-accounts>` •
-  :ref:`Integrate third-party applications <application-integration>` •
   :ref:`Close your account <how-to-close-account>`
 * **Keys and sign-in**:
   :ref:`Import your SSH key <import-your-ssh-keys>` •
@@ -81,7 +80,8 @@ how code hosting, imports, and continuous integration fit together.
   :ref:`Work with Git repositories <hosting-git-repositories>` •
   :ref:`Create and maintain a personal branch <create-and-maintain-personal-branch-in-launchpad>` •
   :ref:`Create and manage a merge proposal <create-and-manage-a-merge-proposal>` •
-  :ref:`Code imports <code-imports>`
+  :ref:`Code imports <code-imports>` •
+  :ref:`Branch privacy <branch-information-types>`
 * **Manage software projects**:
   :ref:`Project registration options <registering-your-project>` •
   :ref:`Project groups <project-groups>` •
@@ -93,7 +93,9 @@ how code hosting, imports, and continuous integration fit together.
 * **Reference**:
   :ref:`Proprietary hosting options <proprietary-hosting>` •
   :ref:`Roles in code reviews <roles-in-code-review>` •
-  :ref:`Comment syntax <launchpad-comment-parsing>`
+  :ref:`Comment syntax <launchpad-comment-parsing>` •
+  :ref:`Project licenses <project-licenses>` •
+  :ref:`General privacy, confidentiality, and disclosure <privacy-confidentiality-disclosure>`
 
 Build and publish software packages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -222,7 +224,7 @@ from preparing your project to importing, exporting, and sharing translations.
 API and automation
 ~~~~~~~~~~~~~~~~~~
 
-Script Launchpad operations through its REST API and the ``launchpadlib``
+Script Launchpad operations through its REST-style API and the ``launchpadlib``
 Python client, and automate external integrations with webhooks.
 
 * **Tutorial**:
@@ -237,29 +239,13 @@ Python client, and automate external integrations with webhooks.
   :ref:`View supported fields and methods <view-supported-fields-and-methods>`
 * **Understand the API**:
   :ref:`The launchpadlib API <launchpadlib>` •
+  :ref:`Integrate third-party applications <application-integration>` •
   :ref:`Launchpad web service <launchpad-web-service>`
 
 * **Reference**:
   :ref:`API compatibility <launchpadlib-api-compatibility>` •
   :ref:`Applications using the API <table-of-applications-using-the-api>` •
   :ref:`Webhooks <webhooks>`
-
-Policies, privacy, and support
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Understand how Launchpad handles privacy and confidentiality, review its legal
-policies, test your workflows safely, and get help when something goes wrong.
-
-* **Privacy and confidentiality**:
-  :ref:`General privacy, confidentiality, and disclosure <privacy-confidentiality-disclosure>` •
-  :ref:`Branch privacy <branch-information-types>`
-* **Legal**:
-  :ref:`Launchpad policies <launchpad-policies>` •
-  :ref:`Project licenses <project-licenses>` •
-  :ref:`Launchpad license <launchpad-license>`
-* **Get help**:
-  :ref:`Understanding OOPSes <what-is-an-oops>` •
-  :ref:`Filing and managing support requests <filing-new-support-request>`
 
 How this documentation is organized
 -----------------------------------
