@@ -33,7 +33,6 @@ features, and a tour of a standard Launchpad page.
   :ref:`Get started with Launchpad <get-started-with-launchpad>` •
   :ref:`What is Launchpad <exp-what-is-launchpad>` •
   :ref:`Page tour <launchpad-page-layout>`  •
-  :ref:`Try Launchpad on the staging environment <staging-environment>`
 * **Feature highlights**:
   :ref:`Personal Package Archives <personal-package-archives-highlights>` •
   :ref:`Answer tracker <answer-tracker-for-community>` •
@@ -57,7 +56,6 @@ contributions are tracked and how to manage mail from Launchpad.
 * **Keys and sign-in**:
   :ref:`Import your SSH key <import-your-ssh-keys>` •
   :ref:`Import an OpenPGP key <import-an-openpgp-key>` •
-  :ref:`Log into other websites with OpenID <log-into-websites-with-openid>`
 * **Understand your account**:
   :ref:`What can you do with a Launchpad account? <your-launchpad-account>` •
   :ref:`Account karma <your-account-karma>` •
@@ -78,17 +76,18 @@ how code hosting, imports, and continuous integration fit together.
   :ref:`Register your project <how-to-register-your-project>` •
   :ref:`Transfer project ownership <transfer-ownership-of-a-project>` •
   :ref:`Close a project <closing-your-project>`
-* **Code hosting basics**:
+* **Code hosting**:
   :ref:`Host your project's code <host-your-project-code-on-launchpad>` •
+  :ref:`Work with Git repositories <hosting-git-repositories>` •
   :ref:`Create and maintain a personal branch <create-and-maintain-personal-branch-in-launchpad>` •
-  :ref:`Create and manage a merge proposal <create-and-manage-a-merge-proposal>`
+  :ref:`Create and manage a merge proposal <create-and-manage-a-merge-proposal>` •
+  :ref:`Code imports <code-imports>`
 * **Manage software projects**:
   :ref:`Project registration options <registering-your-project>` •
+  :ref:`Project groups <project-groups>` •
   :ref:`Planning and recording releases <planning-and-recording-releases>` •
   :ref:`Making project files available for download <making-your-project-files-available-for-download>` •
   :ref:`Publishing project announcements <publishing-project-announcements>` •
-  :ref:`Work with Git repositories <hosting-git-repositories>` •
-  :ref:`Code imports <code-imports>` •
   :ref:`Link code changes to bugs <link-code-to-bug-reports-and-blueprints>` •
   :ref:`Continuous integration <continuous-integration>`
 * **Reference**:
@@ -105,16 +104,16 @@ PPAs, as well as snaps, rocks, charms, and OCI images.
 
 * **Personal package archives basics**:
   :ref:`Install software from PPAs <install-software-from-ppas>` •
+  :ref:`Install software from private PPAs <install-private-ppa-software>` •
+  :ref:`Install software from a PPA snapshot <use-ppa-snapshot-service>` •
   :ref:`Create a PPA <create-ppa>` •
-  :ref:`Upload a package to a PPA <upload-a-package-to-a-ppa>` •
-  :ref:`Install software from private PPAs <install-private-ppa-software>`
+  :ref:`Upload a package to a PPA <upload-a-package-to-a-ppa>`
 * **Manage PPAs**:
   :ref:`Copy packages <copying-packages>` •
   :ref:`Delete packages <package-deletion>` •
   :ref:`Create a source package recipe <create-a-source-package-recipe>` •
   :ref:`Understand source package recipes <packaging>` •
-  :ref:`Troubleshoot package upload errors <troubleshoot-package-upload-errors>` •
-  :ref:`PPA snapshot service <use-ppa-snapshot-service>`
+  :ref:`Troubleshoot package upload errors <troubleshoot-package-upload-errors>`
 * **Build craft artifacts**:
   :ref:`Build snaps <build-snaps-in-launchpad>` •
   :ref:`Build rocks <build-rocks-in-launchpad>` •
@@ -174,8 +173,7 @@ community through Launchpad Answers.
   :ref:`Creating and running teams <creating-and-running-launchpad-teams>` •
   :ref:`Team management <exp-team-management>` •
   :ref:`Indirect team members <indirect-team-members>` •
-  :ref:`Team repositories <team-repositories>` •
-  :ref:`Project groups <project-groups>`
+  :ref:`Team repositories <team-repositories>`
 * **Launchpad Answers and support**:
   :ref:`Launchpad Answer Tracker <launchpad-answer-tracker>` •
   :ref:`Asking for help <asking-for-help>` •
@@ -202,7 +200,7 @@ from preparing your project to importing, exporting, and sharing translations.
   :ref:`Software translation fundamentals <translating-your-software>` •
   :ref:`Managing, tracking, and contributing translations <translating-your-software-ref>` •
   :ref:`Translation groups <translation-groups>` •
-  :ref:`Preparing to translate <preparing-to-translate>` •
+  :ref:`Preparing to translate <preparing-to-translate>`
 * **Project translation tasks**:
   :ref:`Import project translations <how-to-import-project-translations>` •
   :ref:`Import translation templates <how-to-import-project-translation-templates>` •
