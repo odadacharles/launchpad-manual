@@ -31,8 +31,8 @@ features, and a tour of a standard Launchpad page.
 
 * **Overview**:
   :ref:`Get started with Launchpad <get-started-with-launchpad>` •
-  :ref:`What is Launchpad? <exp-what-is-launchpad>` •
-  :doc:`Page tour <explanation/feature-highlights/page-tour>`  •
+  :ref:`What is Launchpad <exp-what-is-launchpad>` •
+  :ref:`Page tour <launchpad-page-layout>`  •
   :ref:`Try Launchpad on the staging environment <staging-environment>`
 * **Feature highlights**:
   :ref:`Personal Package Archives <personal-package-archives-highlights>` •
@@ -66,7 +66,7 @@ contributions are tracked and how to manage mail from Launchpad.
   :ref:`Troubleshooting your account <ref-troubleshooting>` •
   :ref:`Email address already in use <your-email-address-is-already-in-launchpad>` •
   :ref:`SSH fingerprints <ssh-fingerprints>` •
-  :doc:`User preferences <reference/settings-and-preferences>`
+  :ref:`User preferences <settings-and-user-preferences>`
 
 Projects and code hosting
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -107,7 +107,7 @@ PPAs, as well as snaps, rocks, charms, and OCI images.
   :ref:`Install software from PPAs <install-software-from-ppas>` •
   :ref:`Create a PPA <create-ppa>` •
   :ref:`Upload a package to a PPA <upload-a-package-to-a-ppa>` •
-  :doc:`Install software from private PPAs <how-to/packaging/private-ppa-install>`
+  :ref:`Install software from private PPAs <install-private-ppa-software>`
 * **Manage PPAs**:
   :ref:`Copy packages <copying-packages>` •
   :ref:`Delete packages <package-deletion>` •
@@ -126,7 +126,7 @@ PPAs, as well as snaps, rocks, charms, and OCI images.
   :ref:`Build scores <prioritising-builds>` •
   :ref:`Builder specs <builder-specs>` •
   :ref:`Daily build naming conventions <naming-conventions-for-daily-builds>` •
-  :doc:`Source builds knowledge base <reference/packaging/source-builds/source-builds-knowledge-base>` •
+  :ref:`Source builds knowledge base <source-builds-knowledge-base>` •
   :ref:`Live filesystems <live-file-systems>`
 
 Bug tracking
@@ -138,31 +138,31 @@ GitLab, and Mantis.
 
 * **File and manage bugs**:
   :ref:`File a bug <file-a-bug-in-launchpad>` •
-  :doc:`Display bug reporting guidelines <how-to/work-with-bugs/display-bug-reporting-guidelines>` •
+  :ref:`Display bug reporting guidelines <display-bug-reporting-guidelines>` •
   :ref:`Link a bug to a branch <link-a-bug-reports-to-a-branch>` •
   :ref:`Subscribe and unsubscribe to bugs <subscribe-and-unsubscribe-to-bugs>` •
-  :doc:`Turning a bug into a question <reference/bugs/bug-to-question>` •
-  :doc:`Import your project's bug history <how-to/work-with-bugs/import-bug-history>` •
+  :ref:`Turning a bug into a question <turn-bug-to-question>` •
+  :ref:`Import your project's bug history <import-bug-history>` •
   :ref:`Multi-project bugs <about-multi-project-bugs>`
 * **Email interface and external trackers**:
   :ref:`Use the Launchpad email interface <use-the-launchpad-email-interface>` •
-  :doc:`Manage bugs through email <how-to/work-with-bugs/manage-bugs-with-email-interface>` •
+  :ref:`Manage bugs through email <manage-bugs-through-email>` •
   :ref:`Use the Bugzilla plugin <use-the-bugzilla-plugin>` •
   :ref:`Use the Trac plugin <use-the-trac-plugin>` •
-  :doc:`Use the Malone XMLRPC interface <how-to/work-with-bugs/use-the-malone-interface>` •
-  :doc:`Track bugs with Mantis <how-to/work-with-bugs/use-mantis-tracker>` •
+  :ref:`Use the Malone XMLRPC interface <use-malone-interface>` •
+  :ref:`Track bugs with Mantis <track-bugs-with-mantis>` •
   :ref:`Bug tracker plugin API <bug-tracker-api-plugin>`
 * **Reference**:
   :ref:`Bug statuses <bug-status-in-launchpad>` •
-  :doc:`Bug attachments <reference/bugs/bug-attachment>` •
+  :ref:`Bug attachments <bug-attachment>` •
   :ref:`Bug expiry <bug-expiry>` •
   :ref:`Bug heat <bug-heat>` •
   :ref:`Bug subscription <bug-subscription>` •
   :ref:`External bug statuses <external-bug-statuses>` •
   :ref:`External bug tracker interoperability <interoperability-with-external-bug-trackers>` •
-  :doc:`Email interface commands <reference/bugs/email-interface-command-reference>` •
+  :ref:`Email interface commands <email-interface-command-reference>` •
   :ref:`The Malone XMLRPC interface <malone-xmlrpc-interface>` •
-  :doc:`Bug supervisor role <reference/bugs/roles/bug-supervisor>`
+  :ref:`Bug supervisor role <bug-supervisor>`
 
 Teams and community
 ~~~~~~~~~~~~~~~~~~~
@@ -173,7 +173,7 @@ community through Launchpad Answers.
 * **Teams**:
   :ref:`Creating and running teams <creating-and-running-launchpad-teams>` •
   :ref:`Team management <exp-team-management>` •
-  :doc:`Indirect team members <explanation/teams/indirect-team-members>` •
+  :ref:`Indirect team members <indirect-team-members>` •
   :ref:`Team repositories <team-repositories>` •
   :ref:`Project groups <project-groups>`
 * **Launchpad Answers and support**:
@@ -186,7 +186,7 @@ community through Launchpad Answers.
   :ref:`Contacting others and managing your contact information <collaborating-with-other-launchpad-users>`
 * **Reference**:
   :ref:`Badges <launchpad-badge-kit>` •
-  :doc:`Project announcements <reference/launchpad-and-community/project-announcements>` •
+  :ref:`Project announcements <ref-project-announcements>` •
   :ref:`Getting support (best practices) <getting-support-in-launchpad>`
 
 Translations
@@ -210,16 +210,16 @@ from preparing your project to importing, exporting, and sharing translations.
   :ref:`Exporting partial PO files <exporting-partial-gettext-PO-files>`
 * **Reference**:
   :ref:`Translation guidelines <translation-guidelines>` •
-  :doc:`Language-specific guides <reference/translations/language-specific-guides>` •
+  :ref:`Language-specific guides <language-specific-translation-guides>` •
   :ref:`Permissions policies <choosing-a-permissions-policy>` •
   :ref:`Import policy <translation-import-policy>` •
   :ref:`Launchpad translators group <launchpad-translators-group>` •
   :ref:`Licensing <translations-licensing-faq>` •
   :ref:`Plural forms <plural-forms-information-for-languages>` •
   :ref:`Translation best practices <launchpad-project-translation-best-practices>` •
-  :doc:`Reusing translations best practices <reference/translations/reusing-packaged-translations>` •
-  :doc:`PO templates <reference/translations/po-templates>` •
-  :doc:`Translation sharing and suggestions <reference/translations/translation-sharing-and-suggestions>`
+  :ref:`Reusing translations best practices <reusing-packaged-translations>` •
+  :ref:`PO templates <po-templates>` •
+  :ref:`Translation sharing and suggestions <translation-sharing-and-suggestions>`
 
 API and automation
 ~~~~~~~~~~~~~~~~~~
@@ -234,8 +234,8 @@ Python client, and automate external integrations with webhooks.
   :ref:`Sign web requests <sign-web-requests>` •
   :ref:`Using launchpadlib <using-launchpadlib>` •
   :ref:`The Python API <use-the-python-api>` •
-  :doc:`Authenticate with a text browser <how-to/launchpadlib/auth-text-browser>` •
-  :doc:`Integrate a website <how-to/launchpadlib/integrate-website>` •
+  :ref:`Authenticate with a text browser <auth-launchpadlib-text-browser>` •
+  :ref:`Integrate a website <authenticated-access-site-integration>` •
   :ref:`View supported fields and methods <view-supported-fields-and-methods>`
 * **Understand the API**:
   :ref:`The launchpadlib API <launchpadlib>` •

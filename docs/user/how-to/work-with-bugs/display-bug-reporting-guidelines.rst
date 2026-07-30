@@ -2,6 +2,8 @@
    :description: How to display your bug reporting guidelines to Launchpad 
       users.
 
+.. _display-bug-reporting-guidelines:
+
 Display bug reporting guidelines
 ================================
 

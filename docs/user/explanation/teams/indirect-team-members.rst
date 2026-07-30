@@ -1,6 +1,8 @@
 .. meta::
    :description: Understand indirect team membership in Launchpad.
 
+.. _indirect-team-members:
+
 Indirect team members
 =====================
 

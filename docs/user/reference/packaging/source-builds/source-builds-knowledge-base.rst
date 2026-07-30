@@ -2,6 +2,8 @@
    :description: Source builds knowledge base with articles and guides for 
       working with and troubleshooting Launchpad's daily builds feature.
 
+.. _source-builds-knowledge-base:
+
 Source builds knowledge base
 ============================
 

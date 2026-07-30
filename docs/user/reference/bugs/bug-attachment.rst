@@ -2,6 +2,8 @@
    :description: Bug attachment reference for adding screenshots, data files, 
       patches, and documentation to Launchpad bug reports.
 
+.. _bug-attachment:
+
 Bug attachment
 ==============
 

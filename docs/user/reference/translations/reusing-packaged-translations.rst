@@ -2,6 +2,8 @@
 .. meta::
    :description: Understanding when to reuse a translation.
 
+.. _reusing-packaged-translations:
+
 Reusing packaged translations
 =============================
 

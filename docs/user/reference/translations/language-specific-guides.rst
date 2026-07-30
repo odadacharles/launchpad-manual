@@ -2,6 +2,8 @@
    :description: Language-specific translation guides for translators using 
       Launchpad Translations.
 
+.. _language-specific-translation-guides:
+
 Language-specific translation guides
 ====================================
 

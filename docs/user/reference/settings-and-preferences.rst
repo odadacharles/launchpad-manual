@@ -2,6 +2,8 @@
    :description: Reference doc for Launchpad account settings and 
       personalization options.
 
+.. _settings-and-user-preferences:
+
 Settings and preferences
 ========================
 

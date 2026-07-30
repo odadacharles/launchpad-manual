@@ -2,6 +2,8 @@
    :description: Project announcements reference for publishing news, updates, 
       and releases through Launchpad feeds.
 
+.. _ref-project-announcements:
+
 Project announcements
 =====================
 

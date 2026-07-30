@@ -2,6 +2,8 @@
 .. meta::
    :description: Understanding when to convert bugs to questions in Launchpad.
 
+.. _turn-bug-to-question:
+
 Turning a bug into a question
 =============================
 
