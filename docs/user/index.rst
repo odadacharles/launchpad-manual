@@ -54,16 +54,12 @@ contributions are tracked and how to manage mail from Launchpad.
   :ref:`Close your account <how-to-close-account>`
 * **Keys and sign-in**:
   :ref:`Import your SSH key <import-your-ssh-keys>` •
-  :ref:`Import an OpenPGP key <import-an-openpgp-key>` •
+  :ref:`Import an OpenPGP key <import-an-openpgp-key>`
 * **Understand your account**:
   :ref:`What can you do with a Launchpad account? <your-launchpad-account>` •
   :ref:`Account karma <your-account-karma>` •
-  :ref:`Rationale headers in email <rationale-headers-in-email>`
-* **Reference**:
-  :ref:`Troubleshooting your account <ref-troubleshooting>` •
-  :ref:`Email address already in use <your-email-address-is-already-in-launchpad>` •
-  :ref:`SSH fingerprints <ssh-fingerprints>` •
-  :ref:`User preferences <settings-and-user-preferences>`
+  :ref:`Rationale headers in email <rationale-headers-in-email>` •
+  :ref:`Email address already in use <your-email-address-is-already-in-launchpad>`
 
 Projects and code hosting
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -90,12 +86,15 @@ how code hosting, imports, and continuous integration fit together.
   :ref:`Publishing project announcements <publishing-project-announcements>` •
   :ref:`Link code changes to bugs <link-code-to-bug-reports-and-blueprints>` •
   :ref:`Continuous integration <continuous-integration>`
-* **Reference**:
+* **Project and code hosting options**:
   :ref:`Proprietary hosting options <proprietary-hosting>` •
+  :ref:`Verify SSH fingerprints <ssh-fingerprints>` •
   :ref:`Roles in code reviews <roles-in-code-review>` •
   :ref:`Comment syntax <launchpad-comment-parsing>` •
   :ref:`Project licenses <project-licenses>` •
-  :ref:`General privacy, confidentiality, and disclosure <privacy-confidentiality-disclosure>`
+  :ref:`General privacy, confidentiality, and disclosure <privacy-confidentiality-disclosure>` •
+  :ref:`Project announcements <ref-project-announcements>` •
+  :ref:`Display the Launchpad Badge <launchpad-badge-kit>`
 
 Build and publish software packages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -121,14 +120,13 @@ PPAs, as well as snaps, rocks, charms, and OCI images.
   :ref:`Build rocks <build-rocks-in-launchpad>` •
   :ref:`Build charms <build-charms-in-launchpad>` •
   :ref:`Build OCI images <build-oci-images-in-launchpad>`
-* **Reference**:
+* **Building, packaging, and publishing specifications**:
   :ref:`Personal Package Archive <personal-package-archive>` •
   :ref:`Building a source package <building-a-source-package>` •
   :ref:`Build scores <prioritising-builds>` •
   :ref:`Builder specs <builder-specs>` •
   :ref:`Daily build naming conventions <naming-conventions-for-daily-builds>` •
-  :ref:`Source builds knowledge base <source-builds-knowledge-base>` •
-  :ref:`Live filesystems <live-file-systems>`
+  :ref:`Source builds knowledge base <source-builds-knowledge-base>` 
 
 Bug tracking
 ~~~~~~~~~~~~
@@ -153,7 +151,7 @@ GitLab, and Mantis.
   :ref:`Use the Malone XMLRPC interface <use-malone-interface>` •
   :ref:`Track bugs with Mantis <track-bugs-with-mantis>` •
   :ref:`Bug tracker plugin API <bug-tracker-api-plugin>`
-* **Reference**:
+* **Bug tracking definitions and specifications**:
   :ref:`Bug statuses <bug-status-in-launchpad>` •
   :ref:`Bug attachments <bug-attachment>` •
   :ref:`Bug expiry <bug-expiry>` •
@@ -183,10 +181,7 @@ community through Launchpad Answers.
   :ref:`Help the community <help-the-community>` •
   :ref:`Support in your native language <support-native-language>`
 * **Collaboration**:
-  :ref:`Contacting others and managing your contact information <collaborating-with-other-launchpad-users>`
-* **Reference**:
-  :ref:`Badges <launchpad-badge-kit>` •
-  :ref:`Project announcements <ref-project-announcements>` •
+  :ref:`Contacting others and managing your contact information <collaborating-with-other-launchpad-users>` •
   :ref:`Getting support (best practices) <getting-support-in-launchpad>`
 
 Translations
@@ -208,7 +203,7 @@ from preparing your project to importing, exporting, and sharing translations.
   :ref:`Import translation templates <how-to-import-project-translation-templates>` •
   :ref:`Export translations <how-to-export-translations>` •
   :ref:`Exporting partial PO files <exporting-partial-gettext-PO-files>`
-* **Reference**:
+* **Translation guidelines and policies**:
   :ref:`Translation guidelines <translation-guidelines>` •
   :ref:`Language-specific guides <language-specific-translation-guides>` •
   :ref:`Permissions policies <choosing-a-permissions-policy>` •
@@ -241,8 +236,7 @@ Python client, and automate external integrations with webhooks.
   :ref:`The launchpadlib API <launchpadlib>` •
   :ref:`Integrate third-party applications <application-integration>` •
   :ref:`Launchpad web service <launchpad-web-service>`
-
-* **Reference**:
+* **API and automation specifications**:
   :ref:`API compatibility <launchpadlib-api-compatibility>` •
   :ref:`Applications using the API <table-of-applications-using-the-api>` •
   :ref:`Webhooks <webhooks>`
