@@ -20,6 +20,8 @@ is common for a single repository to contain many branches. This means
 that the Launchpad interface needs to be laid out somewhat differently
 to support that.
 
+To perform git operations on Launchpad repositories, see :ref:`perform-git-operations`.
+
 What's supported?
 -----------------
 
@@ -59,61 +61,12 @@ these lines, where ``USER`` is your Launchpad username:
            insteadof = lp:
 
 This allows you to type ``git clone lp:REPOSITORY`` instead of ``git
-clone git+ssh://git.launchpad.net/REPOSITORY``.
+clone git+ssh://git.launchpad.net/REPOSITORY``. To understand Launchpad URL
+paths, see :ref:`launchpad-namespaces`.
 
-The rest of this documentation assumes that you have configured Git this
-way.
-
-You should check the :ref:`fingerprint <ssh-fingerprints>` of
-git.launchpad.net when prompted to do so by SSH.
-
-Getting code
-------------
-
-You can fetch the default repository for a project like this:
-
-::
-
-   $ git clone lp:PROJECT
-
-For example, ``git clone lp:launchpad`` fetches Launchpad itself (or
-will once we've finished converting it to Git!).
-
-To keep your local clone up to date, run:
-
-::
-
-   $ git pull
-
-Pushing code
-------------
-
-You can add a "remote" to your repository like this, if you own the
-project:
-
-::
-
-   $ git remote add origin lp:PROJECT
-
-Or like this (where ``USER`` is your Launchpad username), if you do not
-own the project but want to contribute to it:
-
-::
-
-   $ git remote add origin lp:~USER/PROJECT
-
-Or to push a repository that isn't part of any Launchpad project or
-package, e.g. an ad-hoc experiment:
-
-::
-
-   $ git remote add origin lp:~USER/+git/REPOSITORY-NAME
-
-Now, you can push a branch using a command such as this:
-
-::
-
-   $ git push origin my-changes
+Set up :ref:`SSH authentication <import-your-ssh-keys>` and verify the
+:ref:`fingerprint <ssh-fingerprints>` of git.launchpad.net when prompted to do
+so.
 
 Permissions
 -----------
@@ -156,48 +109,6 @@ protected branch or tag as follows:
    create or push.
 4. The effective permission set is the union of the permissions granted
    by all the selected grants.
-
-Repository URLs
----------------
-
-Every Git repository hosted on Launchpad has a full "canonical" URL of
-one of these forms (these are the versions you'd use in a web browser;
-you only need to change the scheme and host parts for the command-line
-Git client):
-
-* ``https://code.launchpad.net/~OWNER/PROJECT/+git/REPOSITORY``::
-  This identifies a repository for an upstream project.
-* ``https://code.launchpad.net/~OWNER/DISTRIBUTION/+source/SOURCE/+git/REPOSITORY``::
-  This identifies a repository for a source package in a distribution.
-* ``https://code.launchpad.net/~OWNER/+git/REPOSITORY``::
-  This identifies a "personal" repository with no particular connection to any
-  project or package (like "+junk" in Launchpad's Bazaar code hosting).
-
-These are unique, but can involve quite a lot of typing, and in most
-cases there's no need for more than one repository per owner and target
-(project or package). Launchpad therefore has the notion of "default
-repositories". A repository can be the default for a target, in which
-case it has one of these forms:
-
-* ``https://code.launchpad.net/PROJECT``::
-  This is the default repository for an upstream project.
-* ``https://code.launchpad.net/DISTRIBUTION/+source/SOURCE``::
-  This is the default repository for a source package in a distribution.
-
-Or a repository can be a person's or a team's default for a target, in
-which case it has one of these forms:
-
-* ``https://code.launchpad.net/~OWNER/PROJECT``::
-  This is an owner's default repository for an upstream project.
-* ``https://code.launchpad.net/~OWNER/DISTRIBUTION/+source/SOURCE``::
-  This is an owner's default repository for a source package in a distribution.
-
-We expect that projects hosting their code on Launchpad will normally
-have their primary repository set as the default for the project, and
-contributors will normally push to branches in owner-default
-repositories. The extra flexibility with named repositories allows for
-situations such as separate private repositories containing embargoed
-security fixes.
 
 HTTPS authentication
 --------------------
