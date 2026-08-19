@@ -17,6 +17,7 @@ bugs (including via commit messages) and associate your work with blueprints.
     :maxdepth: 1
 
     Host your project's code on Launchpad <host-your-code-on-launchpad>
+    Perform git operations in Launchpad <perform-git-operations>
     Link code to bug reports and blueprints <linking-code-to-bug-reports-and-blueprints>
     Create and maintain a personal branch in Launchpad <create-and-maintain-personal-branch>
     Create and manage a merge proposal <create-and-manage-a-merge-proposal>
