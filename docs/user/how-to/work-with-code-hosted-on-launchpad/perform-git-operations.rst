@@ -34,8 +34,8 @@ To follow this guide you need:
 Clone a repository
 ------------------
 
-Cloning downloads a full copy of the repository and its history, and checks out
-the repository's default branch to your working directory.
+You need a repository's path in Launchpad to clone it. Launchpad repositories
+have unique paths. To find out more about these, see :ref:`Launchpad namespaces <launchpad-namespaces>`.
 
 To clone a project's default repository:
 
@@ -46,7 +46,7 @@ To clone a project's default repository:
 For example, ``git clone git+ssh://<username>@git.launchpad.net/launchpad``
 clones Launchpad's own repository.
 
-To clone a specific repository by its full path:
+You can also clone a specific repository by its full path:
 
 ::
 
@@ -58,8 +58,9 @@ You can also clone read-only over HTTPS without SSH keys:
 
    git clone https://git.launchpad.net/PROJECT
 
-The first time you connect over SSH, verify the :ref:`host fingerprint <ssh-fingerprints>`
-when prompted.
+You will be prompted to confirm the SSH fingerprint when you connect over SSH
+for the first time. Verify the :ref:`host fingerprint <ssh-fingerprints>`
+before accepting the connection.
 
 Push a branch
 -------------
@@ -152,7 +153,7 @@ second remote.
 
       git remote add upstream git+ssh://<username>@git.launchpad.net/PROJECT
 
-#. Fetch and integrate upstream's changes into your branch, e.g., ``main``:
+#. Fetch and integrate upstream changes into your branch, e.g., ``main``:
 
    ::
 
