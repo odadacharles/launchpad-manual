@@ -112,6 +112,7 @@ checksums
 chr
 chroot
 chroots
+Clearsign
 CLI
 Cmd
 CMDLINE
@@ -127,6 +128,7 @@ codeofconduct
 CodeReviewChecklist
 codereviewmessage
 CodeReviewMessageView
+Commenters
 comms
 conf
 config
@@ -332,6 +334,7 @@ IMailer
 importances
 indexable
 InformationInfrastructure
+Informationtype
 infos
 init
 initialized
@@ -451,6 +454,7 @@ Meinel's
 meliae
 MemCache
 memcache
+Menuchoice
 milestoneoverlay
 misconfiguration
 minified
