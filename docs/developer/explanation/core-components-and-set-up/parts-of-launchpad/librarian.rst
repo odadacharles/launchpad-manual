@@ -65,7 +65,7 @@ Step 1. URL Parsing
 The librarian extracts the alias ID (849901997) and the filename
 (git_2.53.0-1ubuntu1.dsc).
 
-AStep 2. Alias lookup in the database
+Step 2. Alias lookup in the database
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The librarian queries for LibraryFileAlias where id equals 849901997.
