@@ -9,16 +9,16 @@ Perform git operations in Launchpad
 
 When working with code hosted on Launchpad, you'll need to perform git
 operations such as forking and cloning repositories, pushing and pulling
-changes to and from upstream branches, merging changes to main, etc.
+changes to and from upstream branches, merging changes into other branches, etc.
 
-Many of these operations are identical to what you may have used when working
-with other codehosting platforms that support git. However, there some nuances
-to how some of these operations are performed in Launchpad.
+Many of these operations are identical to how you may have worked with other
+codehosting platforms that support git. However, there some are nuances to how
+some operations are performed in Launchpad.
 
 Prerequisites
 -------------
 
-To follow this guide you need:
+To follow this guide, you need:
 
 - A Launchpad account. See
   :ref:`how to create an account <create-and-personalise-your-launchpad-account>`.
@@ -28,14 +28,16 @@ To follow this guide you need:
     to your Launchpad account. See :ref:`import your SSH keys <import-your-ssh-keys>`.
   - **HTTPS**: use an access token as your password. See the "HTTPS
     authentication" section of :ref:`hosting Git repositories <hosting-git-repositories>`.
+
 - Basic `knowledge of Git <https://gitimmersion.com/>`_ and Git installed on
-  your machine
+  your machine.
 
 Clone a repository
 ------------------
 
 You need a repository's path in Launchpad to clone it. Launchpad repositories
 have unique paths. To find out more about these, see :ref:`Launchpad namespaces <launchpad-namespaces>`.
+You can also modify your `.gitconfig` file to :ref:`shorten these paths <hosting-git-repositories>`.
 
 To clone a project's default repository:
 
@@ -43,8 +45,8 @@ To clone a project's default repository:
 
    git clone git+ssh://<username>@git.launchpad.net/PROJECT
 
-For example, ``git clone git+ssh://<username>@git.launchpad.net/launchpad``
-clones Launchpad's own repository.
+For example, ``git clone git+ssh://<username>@git.launchpad.net/lpci``
+clones the Launchpad lpci repository.
 
 You can also clone a specific repository by its full path:
 
@@ -52,7 +54,7 @@ You can also clone a specific repository by its full path:
 
    git clone git+ssh://<username>@git.launchpad.net/~OWNER/PROJECT/+git/REPOSITORY
 
-You can also clone read-only over HTTPS without SSH keys:
+You can also clone read-only repositories over HTTPS without SSH keys:
 
 ::
 
@@ -84,8 +86,8 @@ creates it automatically. For example, to create a personal repository:
    git push -u origin main
 
 After a push, Launchpad scans the repository and prints guidelines (visible in
-the :guilabel:`Code` tab) you can use to merge changes to the branch you just
-pushed.
+the :guilabel:`Code` tab) that you can use to merge changes from the branch you
+just pushed to the main branch.
 
 Pull and keep your clone up to date
 -----------------------------------
@@ -116,7 +118,7 @@ If you want to contribute to a repository you don't own, it's a good idea to
 first create your own fork that you can push to freely. The fork will be under
 your account's namespace.
 
-To fork through the web UI:
+To fork a repository through the web UI:
 
 #. Go to the repository's code page, i.e.,
    ``https://code.launchpad.net/PROJECT``.
@@ -127,7 +129,7 @@ Launchpad creates your fork at a path under your account, such as
 :guilabel:`Get this repository`, you'll find the exact clone command.
 
 When you push a new branch with changes to your fork, a new link is created
-that you can follow to open a merge proposal on the original repository:
+that you can follow to open a merge proposal on the upstream repository:
 
 ::
 
@@ -139,9 +141,8 @@ for the full review workflow.
 Sync your fork with upstream
 ----------------------------
 
-Over time, the original repository (the one you forked from, commonly called
-"upstream") gains new commits. To pull those into your fork, add upstream as a
-second remote.
+Over time, the upstream repository you forked from gains new commits. To pull
+those into your fork, add the upstream repository as a second remote.
 
 #. On the original repository's code page, under :guilabel:`Get this
    repository`, copy the repository URL, for example
@@ -168,21 +169,6 @@ second remote.
 You now have two remotes: ``origin`` (your fork, which you push to) and
 ``upstream`` (the original repository, which you pull from). This is the
 standard setup for contributing changes over time.
-
-Use the ``lp:`` shortcut
-------------------------
-
-You can set up the ``lp:`` shortcut so you can type short repository names
-instead of full URLs. Open your ``~/.gitconfig`` and add the following,
-replacing ``USER`` with your Launchpad username:
-
-::
-
-   [url "git+ssh://USER@git.launchpad.net/"]
-           insteadOf = lp:
-
-This lets you write, for example, ``git clone lp:REPOSITORY`` instead of
-``git clone git+ssh://USER@git.launchpad.net/REPOSITORY``. 
 
 Next steps
 ----------
