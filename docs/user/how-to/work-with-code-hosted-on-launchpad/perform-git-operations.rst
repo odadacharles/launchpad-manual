@@ -12,7 +12,7 @@ operations such as forking and cloning repositories, pushing and pulling
 changes to and from upstream branches, merging changes into other branches, etc.
 
 Many of these operations are identical to how you may have worked with other
-codehosting platforms that support git. However, there some are nuances to how
+codehosting platforms that support git. However, there are some nuances to how
 some operations are performed in Launchpad.
 
 Prerequisites
@@ -114,9 +114,9 @@ merge or rebase:
 Fork a repository
 -----------------
 
-If you want to contribute to a repository you don't own, it's a good idea to
-first create your own fork that you can push to freely. The fork will be under
-your account's namespace.
+If you want to contribute to a repository that you don't own, it's a good idea
+to first create your own fork that you can push to freely. The fork will be
+under your account's namespace.
 
 To fork a repository through the web UI:
 
@@ -141,8 +141,8 @@ for the full review workflow.
 Sync your fork with upstream
 ----------------------------
 
-Over time, the upstream repository you forked from gains new commits. To pull
-those into your fork, add the upstream repository as a second remote.
+Over time, the upstream repository that you forked from may gain new commits.
+To pull those into your fork, add the upstream repository as a second remote.
 
 #. On the original repository's code page, under :guilabel:`Get this
    repository`, copy the repository URL, for example
