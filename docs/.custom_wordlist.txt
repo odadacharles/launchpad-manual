@@ -166,6 +166,7 @@ DatetimeUsageGuide
 DavidAllouche
 DBA
 DBEnums
+dch
 dbpatches
 dbschema
 dbupgrade
@@ -182,6 +183,7 @@ DEBFULLNAME
 debhelper
 debian
 debootstrap
+debsign
 debupstream
 DebuggingWithGdb
 debversion
@@ -199,6 +201,7 @@ devel
 devirtualized
 devops
 devpad
+devscripts
 dh
 dir
 DirectDelivery
