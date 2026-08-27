@@ -59,8 +59,9 @@ package::
     apt-get source <package>
     cd <package>-*/
 
-If you are packaging your own software, start from your existing source tree
-containing a ``debian/`` directory.
+If you are `packaging your own software <https://ubuntu.com/project/docs/contributors/new-package/create-a-new-package/>`_,
+start from your existing source tree containing a
+`debian/ directory <https://ubuntu.com/project/docs/how-ubuntu-is-made/concepts/debian-directory/>`_.
 
 Set a PPA-specific version
 --------------------------
