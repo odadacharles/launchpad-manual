@@ -63,12 +63,20 @@ If you are `packaging your own software <https://ubuntu.com/project/docs/contrib
 start from your existing source tree containing a
 `debian/ directory <https://ubuntu.com/project/docs/how-ubuntu-is-made/concepts/debian-directory/>`_.
 
+.. note::
+
+    If your goal is to contribute to Ubuntu packages, it is recommended to use
+    `git-ubuntu <https://ubuntu.com/project/docs/contributors/setup/get-the-source-of-a-package/#git-ubuntu>`_
+    instead of ``apt-get`` to get the source code.
+
+
 Set a PPA-specific version
 --------------------------
 
-A PPA won't accept a version string that clashes with one already in the
-archive, and it won't accept the same version twice. You must add a suffix to
-the version in ``debian/changelog`` so it is unique to your PPA.
+A PPA won't accept a version string that is lower or equal to the one already
+in the archive, and it won't accept the same version twice. If you want to
+distribute or use your software from the PPA, it is recommended that you add a
+suffix to the version in ``debian/changelog`` so it is unique to your PPA.
 
 The tilde (``~``) character sorts *lower* than everything else, so appending
 ``~<label>1`` keeps your PPA version just *below* the official one -- which is
@@ -100,8 +108,8 @@ Build the signed source package
 
 After setting the version, you need to build a source-only package.
 ``dpkg-buildpackage`` reads the version from the top of ``debian/changelog``
-and produces the ``.dsc``, ``.debian.tar.*`` and ``.changes`` files in the
-parent directory::
+and produces the ``.dsc``, ``.debian.tar.*``, ``.buildinfo``, and ``.changes``
+files in the parent directory::
 
     dpkg-buildpackage -S -I -i -nc -d
 
@@ -133,14 +141,14 @@ Find your key ID with::
 
     gpg --list-secret-keys --keyid-format long
 
-``debsign`` signs both the ``.dsc`` and ``.changes`` files. You will be prompted
-for your key passphrase.
+``debsign`` signs the ``.dsc``, ``.buildinfo``, and ``.changes`` files. You
+will be prompted for your key passphrase.
 
 Upload to your PPA
 ------------------
 
-Upload the ``.changes`` file with ``dput``. Launchpad reads it and pulls in the
-referenced ``.dsc`` and source tarball::
+Upload the ``.changes`` file with ``dput``. ``dput`` reads it and uploads the
+referenced ``.dsc`` and source tarball to Launchpad::
 
     dput ppa:<username>/<ppa-name> ../<package>_<version>_source.changes
 
@@ -164,6 +172,9 @@ architecture. You can also watch progress on the PPA's package page::
 
     https://launchpad.net/~<your-lp-id>/+archive/ubuntu/<ppa-name>/+packages
 
+If the source package was **not signed**, no email will be sent because
+Launchpad has no way of verifying the uploader.
+
 Launchpad first builds the binaries for each enabled architecture, then
 publishes the source and binary packages for public download.
 
@@ -171,8 +182,8 @@ publishes the source and binary packages for public download.
 
    A PPA keeps only **one** version of a given source package per Ubuntu series
    -- the highest one. Uploading a newer version *supersedes* the previous one
-   (the old version stays visible in the publishing history). Uploading the same
-   or a lower version is rejected.
+   (the old version stays visible in the publishing history). Uploading the
+   same or a lower version is rejected.
 
 Next steps
 ----------
