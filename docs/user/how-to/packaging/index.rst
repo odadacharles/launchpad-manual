@@ -19,6 +19,7 @@ distribution channels.
     Install software from PPAs <ppa-install>
     Install software from private PPAs <private-ppa-install>
     Upload a package to a PPA <ppa-package-upload>
+    build-deb-packages-in-launchpad
     build-snaps-in-launchpad
     build-rocks-in-launchpad
     build-charms-in-launchpad
