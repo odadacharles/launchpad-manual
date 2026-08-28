@@ -19,6 +19,9 @@ August 2026
   filters to ``Archive.getPublishedSources()``.
 - Added new ``order_by`` keys to ``Archive.getPublishedSources()``. It now also
   allows to order by multiple keys.
+- Fixed bug that caused package picker to crash when searching for distribution
+  packages to target for bugs reported on projects.
+  See `bug report <https://code.launchpad.net/bugs/2161954>`_
 
 July 2026
 +++++++++
