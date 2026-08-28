@@ -137,7 +137,7 @@ An entry: your user account
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you follow the "me_link" by making a GET request to
-`<http://api.staging.launchpad.net/people/+me>`_.
+``http://api.staging.launchpad.net/people/+me``.
 
 ::
 

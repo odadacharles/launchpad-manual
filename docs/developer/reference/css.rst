@@ -29,8 +29,8 @@ Overall, for naming a class we use lower case words separated by hyphens
     <div class="SocialAccounts">...</div>
 
 When it comes to naming classes, for new components we follow the `BEM
-convention <https://getbem.com/naming/>`_, which is also used by the `Vanilla
-framework <https://vanillaframework.io/docs>`_.
+convention <https://github.com/getbem/getbem.github.io/blob/master/src/pages/naming.mdx>`_,
+which is also used by the `Vanilla framework <https://vanillaframework.io/docs>`_.
 
 
 BEM
