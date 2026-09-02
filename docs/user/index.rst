@@ -32,7 +32,7 @@ features, and a tour of a standard Launchpad page.
 * **Overview**:
   :ref:`Get started with Launchpad <get-started-with-launchpad>` •
   :ref:`What is Launchpad <exp-what-is-launchpad>` •
-  :ref:`Page tour <launchpad-page-layout>`  •
+  :ref:`Page tour <launchpad-page-layout>`
 * **Feature highlights**:
   :ref:`Personal Package Archives <personal-package-archives-highlights>` •
   :ref:`Answer tracker <answer-tracker-for-community>` •
@@ -54,12 +54,13 @@ contributions are tracked and how to manage mail from Launchpad.
   :ref:`Close your account <how-to-close-account>`
 * **Keys and sign-in**:
   :ref:`Import your SSH key <import-your-ssh-keys>` •
+  :ref:`Verify Launchpad's SSH fingerprints <ssh-fingerprints>` •
   :ref:`Import an OpenPGP key <import-an-openpgp-key>`
 * **Understand your account**:
   :ref:`What can you do with a Launchpad account? <your-launchpad-account>` •
   :ref:`Account karma <your-account-karma>` •
   :ref:`Rationale headers in email <rationale-headers-in-email>` •
-  :ref:`Email address already in use <your-email-address-is-already-in-launchpad>`
+  :ref:`Troubleshoot your account <ref-troubleshooting>`
 
 Projects and code hosting
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -88,7 +89,6 @@ how code hosting, imports, and continuous integration fit together.
   :ref:`Continuous integration <continuous-integration>`
 * **Project and code hosting options**:
   :ref:`Proprietary hosting options <proprietary-hosting>` •
-  :ref:`Verify SSH fingerprints <ssh-fingerprints>` •
   :ref:`Roles in code reviews <roles-in-code-review>` •
   :ref:`Comment syntax <launchpad-comment-parsing>` •
   :ref:`Project licenses <project-licenses>` •
